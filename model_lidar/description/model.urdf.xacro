@@ -2,5 +2,5 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro"  name="robot_slam">
 
     <xacro:include filename="model_main.xacro" />
-    
+    <xacro:include filename="lidar.xacro" />
 </robot>
