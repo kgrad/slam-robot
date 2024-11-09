@@ -3,4 +3,5 @@
 
     <xacro:include filename="model_main.xacro" />
     <xacro:include filename="lidar.xacro" />
+    <xacro:include filename="ros2_control.xacro" />
 </robot>
