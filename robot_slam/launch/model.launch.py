@@ -20,6 +20,14 @@ def generate_launch_description():
     xacro_file = os.path.join(pkg_path,'description','model.urdf.xacro')
     robot_description_config = xacro.process_file(xacro_file)
     
+    # Create a joint_state_publisher node
+    node_joint_state_publisher = Node(
+        package='joint_state_publisher',
+        executable='joint_state_publisher',
+        name='joint_state_publisher',
+        output='screen'
+    )
+
     # Create a robot_state_publisher node
     params = {'robot_description': robot_description_config.toxml(), 'use_sim_time': use_sim_time}
     node_robot_state_publisher = Node(
@@ -37,5 +45,6 @@ def generate_launch_description():
             default_value='false',
             description='Use sim time if true'),
 
+        node_joint_state_publisher,
         node_robot_state_publisher
     ])
