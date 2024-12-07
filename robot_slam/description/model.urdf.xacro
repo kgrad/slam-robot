@@ -1,22 +1,11 @@
 <?xml version="1.0"?>
-<robot xmlns:xacro="http://www.ros.org/wiki/xacro"  name="robot_slam">
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="robot_slam">
+    <xacro:arg name="use_ros2_control" default="true"/>
+    <xacro:arg name="sim_mode" default="false"/>
 
-    <xacro:include filename="model_main.xacro" />
-    <xacro:include filename="lidar.xacro" />
-    <xacro:include filename="ros2_control.xacro" />
-    <link name="odom"/>
-    <joint name="odom_to_base_link" type="fixed">
-        <parent link="odom"/>
-        <child link="base_link"/>
-        <origin xyz="0 0 0" rpy="0 0 0"/>
-    </joint>
-    <link name="laser">
-      <!-- Laser sensor properties -->
-    </link>
-
-    <joint name="laser_joint" type="fixed">
-      <parent link="base_link"/>
-      <child link="laser"/>
-      <origin xyz="0 0 0.1" rpy="0 0 0"/>
-    </joint>
+    <xacro:include filename="model_main.xacro"/>
+    
+    <!-- Include ros2_control configuration -->
+    <xacro:include filename="ros2_control.xacro"/>
+    <xacro:ros2_control_robot use_ros2_control="$(arg use_ros2_control)" sim_mode="$(arg sim_mode)"/>
 </robot>

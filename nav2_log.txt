@@ -1,0 +1,941 @@
+robot-host@robothost:~/dev_ws$ ros2 launch nav2_bringup navigation_launch.py use_sim_time:=false 
+[INFO] [launch]: All log files can be found below /home/robot-host/.ros/log/2024-11-15-21-53-20-944033-robothost-20092
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [controller_server-1]: process started with pid [20093]
+[INFO] [smoother_server-2]: process started with pid [20095]
+[INFO] [planner_server-3]: process started with pid [20097]
+[INFO] [behavior_server-4]: process started with pid [20099]
+[INFO] [bt_navigator-5]: process started with pid [20101]
+[INFO] [waypoint_follower-6]: process started with pid [20103]
+[INFO] [velocity_smoother-7]: process started with pid [20105]
+[INFO] [lifecycle_manager-8]: process started with pid [20107]
+[lifecycle_manager-8] [INFO] [1731704001.228817705] [lifecycle_manager_navigation]: Creating
+[lifecycle_manager-8] [INFO] [1731704001.236095194] [lifecycle_manager_navigation]: Creating and initializing lifecycle service clients
+[waypoint_follower-6] [INFO] [1731704001.236518464] [waypoint_follower]: 
+[waypoint_follower-6] 	waypoint_follower lifecycle node launched. 
+[waypoint_follower-6] 	Waiting on external lifecycle transitions to activate
+[waypoint_follower-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[waypoint_follower-6] [INFO] [1731704001.239002762] [waypoint_follower]: Creating
+[planner_server-3] [INFO] [1731704001.245991663] [planner_server]: 
+[planner_server-3] 	planner_server lifecycle node launched. 
+[planner_server-3] 	Waiting on external lifecycle transitions to activate
+[planner_server-3] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[velocity_smoother-7] [INFO] [1731704001.246489164] [velocity_smoother]: 
+[velocity_smoother-7] 	velocity_smoother lifecycle node launched. 
+[velocity_smoother-7] 	Waiting on external lifecycle transitions to activate
+[velocity_smoother-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[smoother_server-2] [INFO] [1731704001.247910886] [smoother_server]: 
+[smoother_server-2] 	smoother_server lifecycle node launched. 
+[smoother_server-2] 	Waiting on external lifecycle transitions to activate
+[smoother_server-2] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-1] [INFO] [1731704001.253273214] [controller_server]: 
+[controller_server-1] 	controller_server lifecycle node launched. 
+[controller_server-1] 	Waiting on external lifecycle transitions to activate
+[controller_server-1] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[behavior_server-4] [INFO] [1731704001.253924447] [behavior_server]: 
+[behavior_server-4] 	behavior_server lifecycle node launched. 
+[behavior_server-4] 	Waiting on external lifecycle transitions to activate
+[behavior_server-4] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_navigator-5] [INFO] [1731704001.255786892] [bt_navigator]: 
+[bt_navigator-5] 	bt_navigator lifecycle node launched. 
+[bt_navigator-5] 	Waiting on external lifecycle transitions to activate
+[bt_navigator-5] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_navigator-5] [INFO] [1731704001.256049994] [bt_navigator]: Creating
+[smoother_server-2] [INFO] [1731704001.256080828] [smoother_server]: Creating smoother server
+[planner_server-3] [INFO] [1731704001.256138657] [planner_server]: Creating
+[controller_server-1] [INFO] [1731704001.261618064] [controller_server]: Creating controller server
+[lifecycle_manager-8] [INFO] [1731704001.266747908] [lifecycle_manager_navigation]: Starting managed nodes bringup...
+[lifecycle_manager-8] [INFO] [1731704001.266847322] [lifecycle_manager_navigation]: Configuring controller_server
+[planner_server-3] [INFO] [1731704001.273702150] [global_costmap.global_costmap]: 
+[planner_server-3] 	global_costmap lifecycle node launched. 
+[planner_server-3] 	Waiting on external lifecycle transitions to activate
+[planner_server-3] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-3] [INFO] [1731704001.277042879] [global_costmap.global_costmap]: Creating Costmap
+[controller_server-1] [INFO] [1731704001.277337492] [local_costmap.local_costmap]: 
+[controller_server-1] 	local_costmap lifecycle node launched. 
+[controller_server-1] 	Waiting on external lifecycle transitions to activate
+[controller_server-1] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-1] [INFO] [1731704001.278545683] [local_costmap.local_costmap]: Creating Costmap
+[controller_server-1] [INFO] [1731704001.281103949] [controller_server]: Configuring controller interface
+[controller_server-1] [INFO] [1731704001.281446479] [controller_server]: getting goal checker plugins..
+[controller_server-1] [INFO] [1731704001.281625786] [controller_server]: Controller frequency set to 20.0000Hz
+[controller_server-1] [INFO] [1731704001.281705848] [local_costmap.local_costmap]: Configuring
+[controller_server-1] [INFO] [1731704001.288480954] [local_costmap.local_costmap]: Using plugin "voxel_layer"
+[controller_server-1] [INFO] [1731704001.298443510] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[controller_server-1] [INFO] [1731704001.311590824] [local_costmap.local_costmap]: Initialized plugin "voxel_layer"
+[controller_server-1] [INFO] [1731704001.311666655] [local_costmap.local_costmap]: Using plugin "inflation_layer"
+[controller_server-1] [INFO] [1731704001.312421897] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[controller_server-1] [INFO] [1731704001.325080520] [controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[controller_server-1] [INFO] [1731704001.326667281] [controller_server]: Created goal checker : general_goal_checker of type nav2_controller::SimpleGoalChecker
+[controller_server-1] [INFO] [1731704001.327120333] [controller_server]: Controller Server has general_goal_checker  goal checkers available.
+[controller_server-1] [INFO] [1731704001.332565769] [controller_server]: Created controller : FollowPath of type dwb_core::DWBLocalPlanner
+[controller_server-1] [INFO] [1731704001.335008691] [controller_server]: Setting transform_tolerance to 0.200000
+[controller_server-1] [INFO] [1731704001.355609379] [controller_server]: Using critic "RotateToGoal" (dwb_critics::RotateToGoalCritic)
+[controller_server-1] [INFO] [1731704001.356458719] [controller_server]: Critic plugin initialized
+[controller_server-1] [INFO] [1731704001.356757157] [controller_server]: Using critic "Oscillation" (dwb_critics::OscillationCritic)
+[controller_server-1] [INFO] [1731704001.357432897] [controller_server]: Critic plugin initialized
+[controller_server-1] [INFO] [1731704001.357638746] [controller_server]: Using critic "BaseObstacle" (dwb_critics::BaseObstacleCritic)
+[controller_server-1] [INFO] [1731704001.357944843] [controller_server]: Critic plugin initialized
+[controller_server-1] [INFO] [1731704001.358109807] [controller_server]: Using critic "GoalAlign" (dwb_critics::GoalAlignCritic)
+[controller_server-1] [INFO] [1731704001.358597220] [controller_server]: Critic plugin initialized
+[controller_server-1] [INFO] [1731704001.358786186] [controller_server]: Using critic "PathAlign" (dwb_critics::PathAlignCritic)
+[controller_server-1] [INFO] [1731704001.359345834] [controller_server]: Critic plugin initialized
+[controller_server-1] [INFO] [1731704001.359512348] [controller_server]: Using critic "PathDist" (dwb_critics::PathDistCritic)
+[controller_server-1] [INFO] [1731704001.359860798] [controller_server]: Critic plugin initialized
+[controller_server-1] [INFO] [1731704001.360026492] [controller_server]: Using critic "GoalDist" (dwb_critics::GoalDistCritic)
+[controller_server-1] [INFO] [1731704001.360312362] [controller_server]: Critic plugin initialized
+[controller_server-1] [INFO] [1731704001.360350730] [controller_server]: Controller Server has FollowPath  controllers available.
+[lifecycle_manager-8] [INFO] [1731704001.370701527] [lifecycle_manager_navigation]: Configuring smoother_server
+[smoother_server-2] [INFO] [1731704001.371170029] [smoother_server]: Configuring smoother server
+[smoother_server-2] [INFO] [1731704001.387267877] [smoother_server]: Created smoother : simple_smoother of type nav2_smoother::SimpleSmoother
+[smoother_server-2] [INFO] [1731704001.388719552] [smoother_server]: Smoother Server has simple_smoother  smoothers available.
+[lifecycle_manager-8] [INFO] [1731704001.397634792] [lifecycle_manager_navigation]: Configuring planner_server
+[planner_server-3] [INFO] [1731704001.398109288] [planner_server]: Configuring
+[planner_server-3] [INFO] [1731704001.398180057] [global_costmap.global_costmap]: Configuring
+[planner_server-3] [INFO] [1731704001.409429218] [global_costmap.global_costmap]: Using plugin "static_layer"
+[planner_server-3] [INFO] [1731704001.416386147] [global_costmap.global_costmap]: Subscribing to the map topic (/map) with transient local durability
+[planner_server-3] [INFO] [1731704001.418838974] [global_costmap.global_costmap]: Initialized plugin "static_layer"
+[planner_server-3] [INFO] [1731704001.418910061] [global_costmap.global_costmap]: Using plugin "obstacle_layer"
+[planner_server-3] [INFO] [1731704001.419597537] [global_costmap.global_costmap]: Subscribed to Topics: scan
+[planner_server-3] [INFO] [1731704001.424402572] [global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
+[planner_server-3] [INFO] [1731704001.424460029] [global_costmap.global_costmap]: Using plugin "inflation_layer"
+[planner_server-3] [INFO] [1731704001.425875017] [global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+[planner_server-3] [INFO] [1731704001.438992217] [planner_server]: Created global planner plugin GridBased of type nav2_navfn_planner/NavfnPlanner
+[planner_server-3] [INFO] [1731704001.439085798] [planner_server]: Configuring plugin GridBased of type NavfnPlanner
+[planner_server-3] [INFO] [1731704001.440557608] [planner_server]: Planner Server has GridBased  planners available.
+[lifecycle_manager-8] [INFO] [1731704001.452675508] [lifecycle_manager_navigation]: Configuring behavior_server
+[behavior_server-4] [INFO] [1731704001.452978552] [behavior_server]: Configuring
+[behavior_server-4] [INFO] [1731704001.464760543] [behavior_server]: Creating behavior plugin spin of type nav2_behaviors/Spin
+[behavior_server-4] [INFO] [1731704001.467397895] [behavior_server]: Configuring spin
+[behavior_server-4] [INFO] [1731704001.473092553] [behavior_server]: Creating behavior plugin backup of type nav2_behaviors/BackUp
+[behavior_server-4] [INFO] [1731704001.475462126] [behavior_server]: Configuring backup
+[behavior_server-4] [INFO] [1731704001.481896374] [behavior_server]: Creating behavior plugin drive_on_heading of type nav2_behaviors/DriveOnHeading
+[behavior_server-4] [INFO] [1731704001.484423365] [behavior_server]: Configuring drive_on_heading
+[behavior_server-4] [INFO] [1731704001.488772427] [behavior_server]: Creating behavior plugin assisted_teleop of type nav2_behaviors/AssistedTeleop
+[behavior_server-4] [INFO] [1731704001.492845486] [behavior_server]: Configuring assisted_teleop
+[behavior_server-4] [INFO] [1731704001.500984738] [behavior_server]: Creating behavior plugin wait of type nav2_behaviors/Wait
+[behavior_server-4] [INFO] [1731704001.503825901] [behavior_server]: Configuring wait
+[lifecycle_manager-8] [INFO] [1731704001.511549391] [lifecycle_manager_navigation]: Configuring bt_navigator
+[bt_navigator-5] [INFO] [1731704001.512026582] [bt_navigator]: Configuring
+[lifecycle_manager-8] [INFO] [1731704001.608205108] [lifecycle_manager_navigation]: Configuring waypoint_follower
+[waypoint_follower-6] [INFO] [1731704001.608563441] [waypoint_follower]: Configuring
+[waypoint_follower-6] [INFO] [1731704001.620630756] [waypoint_follower]: Created waypoint_task_executor : wait_at_waypoint of type nav2_waypoint_follower::WaitAtWaypoint
+[lifecycle_manager-8] [INFO] [1731704001.621462919] [lifecycle_manager_navigation]: Configuring velocity_smoother
+[velocity_smoother-7] [INFO] [1731704001.621687624] [velocity_smoother]: Configuring velocity smoother
+[lifecycle_manager-8] [INFO] [1731704001.625514585] [lifecycle_manager_navigation]: Activating controller_server
+[controller_server-1] [INFO] [1731704001.625701516] [controller_server]: Activating
+[controller_server-1] [INFO] [1731704001.625756428] [local_costmap.local_costmap]: Activating
+[controller_server-1] [INFO] [1731704001.625781618] [local_costmap.local_costmap]: Checking transform
+[controller_server-1] [INFO] [1731704001.625828710] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "base_link" passed to canTransform argument source_frame - frame does not exist
+[controller_server-1] [INFO] [1731704002.125917189] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "base_link" passed to canTransform argument source_frame - frame does not exist
+[planner_server-3] [INFO] [1731704002.228238950] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 219 X 246 at 0.025000 m/pix
+[controller_server-1] [INFO] [1731704002.625983355] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "base_link" passed to canTransform argument source_frame - frame does not exist
+[controller_server-1] [INFO] [1731704003.125882948] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "base_link" passed to canTransform argument source_frame - frame does not exist
+[controller_server-1] [INFO] [1731704003.625917575] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "base_link" passed to canTransform argument source_frame - frame does not exist
+[controller_server-1] [INFO] [1731704004.125914810] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "base_link" passed to canTransform argument source_frame - frame does not exist
+[controller_server-1] [INFO] [1731704004.625905543] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "base_link" passed to canTransform argument source_frame - frame does not exist
+[controller_server-1] [INFO] [1731704005.125923868] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "base_link" passed to canTransform argument source_frame - frame does not exist
+[controller_server-1] [INFO] [1731704005.625906423] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "base_link" passed to canTransform argument source_frame - frame does not exist
+[controller_server-1] [INFO] [1731704006.125920977] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "base_link" passed to canTransform argument source_frame - frame does not exist
+[controller_server-1] [INFO] [1731704006.625945009] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "base_link" passed to canTransform argument source_frame - frame does not exist
+[controller_server-1] [INFO] [1731704007.125920494] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "base_link" passed to canTransform argument source_frame - frame does not exist
+[controller_server-1] [INFO] [1731704007.625913333] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "base_link" passed to canTransform argument source_frame - frame does not exist
+[controller_server-1] [INFO] [1731704008.125906788] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "base_link" passed to canTransform argument source_frame - frame does not exist
+[controller_server-1] [INFO] [1731704008.625920920] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "base_link" passed to canTransform argument source_frame - frame does not exist
+[controller_server-1] [INFO] [1731704009.125884915] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "base_link" passed to canTransform argument source_frame - frame does not exist
+[controller_server-1] [INFO] [1731704009.625984263] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "base_link" passed to canTransform argument source_frame - frame does not exist
+[controller_server-1] [INFO] [1731704010.125916441] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "base_link" passed to canTransform argument source_frame - frame does not exist
+[controller_server-1] [INFO] [1731704010.625933161] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "base_link" passed to canTransform argument source_frame - frame does not exist
+[controller_server-1] [INFO] [1731704011.125907258] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "base_link" passed to canTransform argument source_frame - frame does not exist
+[controller_server-1] [INFO] [1731704011.625977979] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "base_link" passed to canTransform argument source_frame - frame does not exist
+[controller_server-1] [INFO] [1731704012.125903756] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "base_link" passed to canTransform argument source_frame - frame does not exist
+[controller_server-1] [INFO] [1731704012.625903985] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "base_link" passed to canTransform argument source_frame - frame does not exist
+[controller_server-1] [INFO] [1731704013.125915190] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "base_link" passed to canTransform argument source_frame - frame does not exist
+[controller_server-1] [INFO] [1731704013.626053603] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "base_link" passed to canTransform argument source_frame - frame does not exist
+[controller_server-1] [INFO] [1731704014.125905026] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "base_link" passed to canTransform argument source_frame - frame does not exist
+[controller_server-1] [INFO] [1731704014.625976521] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "base_link" passed to canTransform argument source_frame - frame does not exist
+[controller_server-1] [INFO] [1731704015.125887695] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "base_link" passed to canTransform argument source_frame - frame does not exist
+[controller_server-1] [INFO] [1731704015.625904218] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "base_link" passed to canTransform argument source_frame - frame does not exist
+[controller_server-1] [INFO] [1731704016.125879723] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "base_link" passed to canTransform argument source_frame - frame does not exist
+[controller_server-1] [INFO] [1731704016.626061803] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "base_link" passed to canTransform argument source_frame - frame does not exist
+[controller_server-1] [INFO] [1731704017.125966739] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "base_link" passed to canTransform argument source_frame - frame does not exist
+[controller_server-1] [INFO] [1731704017.625942621] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "base_link" passed to canTransform argument source_frame - frame does not exist
+[controller_server-1] [INFO] [1731704018.125929455] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "base_link" passed to canTransform argument source_frame - frame does not exist
+[controller_server-1] [INFO] [1731704018.626009695] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "base_link" passed to canTransform argument source_frame - frame does not exist
+[controller_server-1] [INFO] [1731704019.125989000] [local_costmap.local_costmap]: start
+[controller_server-1] [INFO] [1731704019.377214189] [controller_server]: Creating bond (controller_server) to lifecycle manager.
+[lifecycle_manager-8] [INFO] [1731704019.521903031] [lifecycle_manager_navigation]: Server controller_server connected with bond.
+[lifecycle_manager-8] [INFO] [1731704019.522019967] [lifecycle_manager_navigation]: Activating smoother_server
+[smoother_server-2] [INFO] [1731704019.522586556] [smoother_server]: Activating
+[smoother_server-2] [INFO] [1731704019.522653235] [smoother_server]: Creating bond (smoother_server) to lifecycle manager.
+[lifecycle_manager-8] [INFO] [1731704019.630193898] [lifecycle_manager_navigation]: Server smoother_server connected with bond.
+[lifecycle_manager-8] [INFO] [1731704019.630348332] [lifecycle_manager_navigation]: Activating planner_server
+[planner_server-3] [INFO] [1731704019.631243993] [planner_server]: Activating
+[planner_server-3] [INFO] [1731704019.631575060] [global_costmap.global_costmap]: Activating
+[planner_server-3] [INFO] [1731704019.631637300] [global_costmap.global_costmap]: Checking transform
+[planner_server-3] [INFO] [1731704019.632116371] [global_costmap.global_costmap]: start
+[planner_server-3] [INFO] [1731704020.684767177] [planner_server]: Activating plugin GridBased of type NavfnPlanner
+[planner_server-3] [INFO] [1731704020.688340144] [planner_server]: Creating bond (planner_server) to lifecycle manager.
+[lifecycle_manager-8] [INFO] [1731704020.798712918] [lifecycle_manager_navigation]: Server planner_server connected with bond.
+[lifecycle_manager-8] [INFO] [1731704020.798853305] [lifecycle_manager_navigation]: Activating behavior_server
+[behavior_server-4] [INFO] [1731704020.799659494] [behavior_server]: Activating
+[behavior_server-4] [INFO] [1731704020.799730295] [behavior_server]: Activating spin
+[behavior_server-4] [INFO] [1731704020.799758238] [behavior_server]: Activating backup
+[behavior_server-4] [INFO] [1731704020.799777456] [behavior_server]: Activating drive_on_heading
+[behavior_server-4] [INFO] [1731704020.799797172] [behavior_server]: Activating assisted_teleop
+[behavior_server-4] [INFO] [1731704020.799815561] [behavior_server]: Activating wait
+[behavior_server-4] [INFO] [1731704020.799840961] [behavior_server]: Creating bond (behavior_server) to lifecycle manager.
+[lifecycle_manager-8] [INFO] [1731704020.910898895] [lifecycle_manager_navigation]: Server behavior_server connected with bond.
+[lifecycle_manager-8] [INFO] [1731704020.911025606] [lifecycle_manager_navigation]: Activating bt_navigator
+[bt_navigator-5] [INFO] [1731704020.911752804] [bt_navigator]: Activating
+[bt_navigator-5] [INFO] [1731704021.376395040] [bt_navigator]: Creating bond (bt_navigator) to lifecycle manager.
+[lifecycle_manager-8] [INFO] [1731704021.488004577] [lifecycle_manager_navigation]: Server bt_navigator connected with bond.
+[lifecycle_manager-8] [INFO] [1731704021.488121993] [lifecycle_manager_navigation]: Activating waypoint_follower
+[waypoint_follower-6] [INFO] [1731704021.489029936] [waypoint_follower]: Activating
+[waypoint_follower-6] [INFO] [1731704021.489144454] [waypoint_follower]: Creating bond (waypoint_follower) to lifecycle manager.
+[lifecycle_manager-8] [INFO] [1731704021.598380200] [lifecycle_manager_navigation]: Server waypoint_follower connected with bond.
+[lifecycle_manager-8] [INFO] [1731704021.598514559] [lifecycle_manager_navigation]: Activating velocity_smoother
+[velocity_smoother-7] [INFO] [1731704021.599784108] [velocity_smoother]: Activating
+[velocity_smoother-7] [INFO] [1731704021.599989269] [velocity_smoother]: Creating bond (velocity_smoother) to lifecycle manager.
+[lifecycle_manager-8] [INFO] [1731704021.712953175] [lifecycle_manager_navigation]: Server velocity_smoother connected with bond.
+[lifecycle_manager-8] [INFO] [1731704021.713103658] [lifecycle_manager_navigation]: Managed nodes are active
+[lifecycle_manager-8] [INFO] [1731704021.713148316] [lifecycle_manager_navigation]: Creating bond timer...
+[controller_server-1] [INFO] [1731704023.379591144] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704021.015 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704023.379692571] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704021.015 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704027.390999061] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704026.909 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704027.391131624] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704026.909 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704027.497466382] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704027.042 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704027.504128080] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704027.042 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704027.723563510] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704027.176 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704027.723592649] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704027.176 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704027.813054960] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704027.303 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704027.813222946] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704027.303 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704027.973161445] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704027.433 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704027.973240329] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704027.433 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704028.208843296] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704027.566 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704028.381135605] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704027.697 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[bt_navigator-5] [INFO] [1731704034.452706113] [bt_navigator]: Begin navigating from current location (0.00, 0.00) to (-0.14, 0.45)
+[controller_server-1] [INFO] [1731704034.474023120] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-1] [WARN] [1731704034.474096761] [controller_server]: No goal checker was specified in parameter 'current_goal_checker'. Server will use only plugin loaded general_goal_checker . This warning will appear once.
+[controller_server-1] [INFO] [1731704035.524371246] [controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1731704036.574379018] [controller_server]: Passing new path to controller.
+[planner_server-3] [INFO] [1731704036.632296888] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 220 X 261 at 0.025000 m/pix
+[planner_server-3] [INFO] [1731704037.062228602] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704036.537 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704037.062240732] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704036.537 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704037.574466283] [controller_server]: Passing new path to controller.
+[planner_server-3] [INFO] [1731704037.632336866] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 225 X 267 at 0.025000 m/pix
+[controller_server-1] [INFO] [1731704038.624386652] [controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1731704038.849949103] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704038.109 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704038.849941617] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704038.109 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704039.624379329] [controller_server]: Passing new path to controller.
+[planner_server-3] [INFO] [1731704039.632435404] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 225 X 268 at 0.025000 m/pix
+[planner_server-3] [INFO] [1731704040.632351214] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 225 X 269 at 0.025000 m/pix
+[controller_server-1] [INFO] [1731704040.674362518] [controller_server]: Passing new path to controller.
+[planner_server-3] [INFO] [1731704041.495345990] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704039.814 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704041.674514163] [controller_server]: Passing new path to controller.
+[planner_server-3] [INFO] [1731704042.340438633] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704039.945 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704042.724360311] [controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1731704043.724358926] [controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1731704043.838833293] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704040.205 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704044.028502733] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704040.205 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [ERROR] [1731704044.474578723] [controller_server]: Failed to make progress
+[controller_server-1] [WARN] [1731704044.474769120] [controller_server]: [follow_path] [ActionServer] Aborting handle.
+[controller_server-1] [INFO] [1731704044.487907283] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704040.467 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704044.487959808] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704040.467 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704044.493655742] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[controller_server-1] [INFO] [1731704044.495943006] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-1] [INFO] [1731704044.796433248] [controller_server]: Passing new path to controller.
+[controller_server-1] [ERROR] [1731704045.046519268] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704045.046574774] [tf_help]: Data time: 1731704042s 517559805ns, Transform time: 1731704041s 753084828ns
+[controller_server-1] [WARN] [1731704045.046630040] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [ERROR] [1731704045.096722110] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704045.096778095] [tf_help]: Data time: 1731704042s 517559805ns, Transform time: 1731704041s 753084828ns
+[controller_server-1] [WARN] [1731704045.096844472] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [ERROR] [1731704045.146868853] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704045.146933789] [tf_help]: Data time: 1731704042s 684297884ns, Transform time: 1731704041s 753084828ns
+[controller_server-1] [WARN] [1731704045.147026141] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [ERROR] [1731704045.196907830] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704045.196959120] [tf_help]: Data time: 1731704042s 684297884ns, Transform time: 1731704041s 753084828ns
+[controller_server-1] [WARN] [1731704045.197017636] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [ERROR] [1731704045.246811606] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704045.246876348] [tf_help]: Data time: 1731704042s 684297884ns, Transform time: 1731704041s 753084828ns
+[controller_server-1] [WARN] [1731704045.246965027] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [ERROR] [1731704045.296702115] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704045.296760294] [tf_help]: Data time: 1731704042s 684297884ns, Transform time: 1731704041s 753084828ns
+[controller_server-1] [WARN] [1731704045.296829616] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [ERROR] [1731704045.346740948] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704045.346813216] [tf_help]: Data time: 1731704042s 684297884ns, Transform time: 1731704041s 753084828ns
+[controller_server-1] [WARN] [1731704045.346915029] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [ERROR] [1731704045.347026413] [controller_server]: Controller patience exceeded
+[controller_server-1] [WARN] [1731704045.347153591] [controller_server]: [follow_path] [ActionServer] Aborting handle.
+[controller_server-1] [INFO] [1731704045.363573941] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[planner_server-3] [INFO] [1731704045.364922903] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[planner_server-3] [WARN] [1731704045.648553375] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 3.5494 Hz
+[controller_server-1] [INFO] [1731704045.663955186] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-1] [ERROR] [1731704045.664424170] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704045.664456838] [tf_help]: Data time: 1731704042s 684297884ns, Transform time: 1731704041s 753084828ns
+[controller_server-1] [WARN] [1731704045.664510355] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [ERROR] [1731704045.714531065] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704045.714567505] [tf_help]: Data time: 1731704042s 784050554ns, Transform time: 1731704041s 753084828ns
+[controller_server-1] [WARN] [1731704045.714613970] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [ERROR] [1731704045.764551953] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704045.764597866] [tf_help]: Data time: 1731704042s 784050554ns, Transform time: 1731704041s 884043267ns
+[controller_server-1] [WARN] [1731704045.764658767] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [ERROR] [1731704045.814763683] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704045.814810890] [tf_help]: Data time: 1731704042s 784050554ns, Transform time: 1731704041s 884043267ns
+[controller_server-1] [WARN] [1731704045.814876771] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [ERROR] [1731704045.864616653] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704045.864662676] [tf_help]: Data time: 1731704042s 784050554ns, Transform time: 1731704041s 884043267ns
+[controller_server-1] [WARN] [1731704045.864727107] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [ERROR] [1731704045.914622363] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704045.914753872] [tf_help]: Data time: 1731704042s 784050554ns, Transform time: 1731704041s 884043267ns
+[controller_server-1] [WARN] [1731704045.914829191] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [ERROR] [1731704045.964845544] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704045.964922794] [tf_help]: Data time: 1731704042s 784050554ns, Transform time: 1731704041s 884043267ns
+[controller_server-1] [WARN] [1731704045.965025534] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [ERROR] [1731704045.965166513] [controller_server]: Controller patience exceeded
+[controller_server-1] [WARN] [1731704045.965355397] [controller_server]: [follow_path] [ActionServer] Aborting handle.
+[controller_server-1] [INFO] [1731704045.983867834] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[controller_server-1] [INFO] [1731704045.986070656] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-1] [ERROR] [1731704046.136885517] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704046.137002141] [tf_help]: Data time: 1731704042s 784050554ns, Transform time: 1731704041s 884043267ns
+[controller_server-1] [WARN] [1731704046.137100826] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [WARN] [1731704046.137466680] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[controller_server-1] [ERROR] [1731704046.137703225] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704046.137730591] [tf_help]: Data time: 1731704042s 784050554ns, Transform time: 1731704041s 884043267ns
+[controller_server-1] [WARN] [1731704046.137794887] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [ERROR] [1731704046.188407351] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704046.188470484] [tf_help]: Data time: 1731704042s 784050554ns, Transform time: 1731704041s 884043267ns
+[controller_server-1] [WARN] [1731704046.188571059] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [ERROR] [1731704046.239382384] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704046.239455884] [tf_help]: Data time: 1731704042s 784050554ns, Transform time: 1731704041s 884043267ns
+[controller_server-1] [WARN] [1731704046.239571222] [controller_server]: Unable to transform robot pose into global plan's frame
+[planner_server-3] [INFO] [1731704046.286169313] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704043.522 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [ERROR] [1731704046.290229020] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704046.290281803] [tf_help]: Data time: 1731704042s 817249553ns, Transform time: 1731704041s 884043267ns
+[controller_server-1] [WARN] [1731704046.290366745] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [ERROR] [1731704046.290464472] [controller_server]: Controller patience exceeded
+[controller_server-1] [WARN] [1731704046.290609794] [controller_server]: [follow_path] [ActionServer] Aborting handle.
+[behavior_server-4] [INFO] [1731704046.304125464] [behavior_server]: Running spin
+[behavior_server-4] [INFO] [1731704046.304487701] [behavior_server]: Turning 1.57 for spin behavior.
+[controller_server-1] [INFO] [1731704046.560845483] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704043.612 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704046.560847385] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704043.612 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704046.563695953] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704043.874 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704046.575760229] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704044.004 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704046.575982916] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704044.137 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704046.576025858] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704044.004 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704046.576196673] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704044.137 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704046.583426136] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704044.269 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704046.583628088] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704044.398 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704046.583467739] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704044.269 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704046.583712642] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704044.398 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704046.632373410] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 241 X 326 at 0.025000 m/pix
+[behavior_server-4] [INFO] [1731704046.804976373] [behavior_server]: spin completed successfully
+[controller_server-1] [INFO] [1731704046.853584398] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-1] [ERROR] [1731704046.854003851] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704046.854048110] [tf_help]: Data time: 1731704045s 250856705ns, Transform time: 1731704045s 29697504ns
+[controller_server-1] [WARN] [1731704046.854121399] [controller_server]: Unable to transform robot pose into global plan's frame
+[planner_server-3] [INFO] [1731704047.632487079] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 286 X 326 at 0.025000 m/pix
+[controller_server-1] [INFO] [1731704047.720139669] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704045.838 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704047.732173287] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704045.969 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704047.743292578] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704046.101 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704047.744966017] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704046.101 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704047.903941101] [controller_server]: Passing new path to controller.
+[planner_server-3] [INFO] [1731704048.632345355] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 328 X 326 at 0.025000 m/pix
+[controller_server-1] [INFO] [1731704048.903909450] [controller_server]: Passing new path to controller.
+[planner_server-3] [INFO] [1731704049.632383040] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 336 X 326 at 0.025000 m/pix
+[controller_server-1] [INFO] [1731704049.953934703] [controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1731704050.843391543] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704047.018 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704050.843602899] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704047.148 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704050.843391738] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704047.018 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704050.845313942] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704047.280 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704050.845313646] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704047.148 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704050.953944573] [controller_server]: Passing new path to controller.
+[planner_server-3] [INFO] [1731704051.030943612] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704047.280 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704051.046948083] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704047.412 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704051.047176762] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704047.542 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704051.047053587] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704047.542 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [ERROR] [1731704051.254093776] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704051.254134607] [tf_help]: Data time: 1731704047s 950738675ns, Transform time: 1731704047s 386061355ns
+[controller_server-1] [WARN] [1731704051.254192045] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [INFO] [1731704052.003940840] [controller_server]: Passing new path to controller.
+[controller_server-1] [ERROR] [1731704052.504134166] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704052.504193163] [tf_help]: Data time: 1731704049s 484174046ns, Transform time: 1731704048s 172052627ns
+[controller_server-1] [WARN] [1731704052.504268264] [controller_server]: Unable to transform robot pose into global plan's frame
+[planner_server-3] [INFO] [1731704052.632361633] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 343 X 326 at 0.025000 m/pix
+[controller_server-1] [INFO] [1731704052.814228313] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704049.704 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704053.053938994] [controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1731704053.528775306] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704050.489 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704053.528777009] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704050.489 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704053.550995875] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704050.620 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704053.551139341] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704050.755 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704053.550995994] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704050.620 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704053.551143518] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704050.755 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704053.551251854] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704050.885 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704053.711313801] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704050.885 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704053.856384458] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704051.015 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704053.856631523] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704052.299 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704053.856518965] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704051.015 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704053.856751811] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704052.299 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704054.031478200] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704052.325 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704054.031536890] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704052.454 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704054.031504689] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704052.325 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704054.031576073] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704052.454 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704054.053930205] [controller_server]: Passing new path to controller.
+[planner_server-3] [INFO] [1731704054.840057518] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704053.370 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704054.840201904] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704053.370 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704055.103929755] [controller_server]: Passing new path to controller.
+[controller_server-1] [ERROR] [1731704055.104395261] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704055.104411604] [tf_help]: Data time: 1731704054s 150826822ns, Transform time: 1731704053s 870423513ns
+[controller_server-1] [WARN] [1731704055.104453800] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [ERROR] [1731704055.154002793] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704055.154027154] [tf_help]: Data time: 1731704054s 150826822ns, Transform time: 1731704053s 870423513ns
+[controller_server-1] [WARN] [1731704055.154058190] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [ERROR] [1731704055.204011045] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704055.204035011] [tf_help]: Data time: 1731704054s 150826822ns, Transform time: 1731704053s 870423513ns
+[controller_server-1] [WARN] [1731704055.204065979] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [ERROR] [1731704055.253996139] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704055.254025336] [tf_help]: Data time: 1731704054s 150826822ns, Transform time: 1731704053s 870423513ns
+[controller_server-1] [WARN] [1731704055.254053447] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [ERROR] [1731704055.304059446] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704055.304095268] [tf_help]: Data time: 1731704054s 150826822ns, Transform time: 1731704053s 870423513ns
+[controller_server-1] [WARN] [1731704055.304136215] [controller_server]: Unable to transform robot pose into global plan's frame
+[planner_server-3] [INFO] [1731704055.351775140] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704053.897 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704055.351933561] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704054.026 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [ERROR] [1731704055.354116993] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704055.354178529] [tf_help]: Data time: 1731704054s 150826822ns, Transform time: 1731704053s 870423513ns
+[controller_server-1] [WARN] [1731704055.354245132] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [INFO] [1731704055.369411745] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704054.157 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704055.378699000] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704054.157 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [ERROR] [1731704055.404041304] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704055.404075102] [tf_help]: Data time: 1731704054s 150826822ns, Transform time: 1731704053s 870423513ns
+[controller_server-1] [WARN] [1731704055.404115762] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [ERROR] [1731704055.404156307] [controller_server]: Controller patience exceeded
+[controller_server-1] [WARN] [1731704055.404253630] [controller_server]: [follow_path] [ActionServer] Aborting handle.
+[controller_server-1] [INFO] [1731704055.423323988] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[controller_server-1] [INFO] [1731704055.424441690] [controller_server]: Received a goal, begin computing control effort.
+[planner_server-3] [INFO] [1731704055.530897128] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704054.288 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704055.530924203] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704054.288 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [ERROR] [1731704055.534840710] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704055.534886224] [tf_help]: Data time: 1731704054s 150826822ns, Transform time: 1731704053s 870423513ns
+[controller_server-1] [WARN] [1731704055.534927705] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [WARN] [1731704055.535056638] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[controller_server-1] [ERROR] [1731704055.535127392] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704055.535135743] [tf_help]: Data time: 1731704054s 150826822ns, Transform time: 1731704053s 870423513ns
+[controller_server-1] [WARN] [1731704055.535157955] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [ERROR] [1731704055.585553703] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704055.585630392] [tf_help]: Data time: 1731704054s 150826822ns, Transform time: 1731704053s 870423513ns
+[controller_server-1] [WARN] [1731704055.585685996] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [ERROR] [1731704055.636008919] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704055.636043040] [tf_help]: Data time: 1731704054s 150826822ns, Transform time: 1731704053s 870423513ns
+[controller_server-1] [WARN] [1731704055.636082482] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [ERROR] [1731704055.686418555] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704055.686450756] [tf_help]: Data time: 1731704054s 150826822ns, Transform time: 1731704053s 870423513ns
+[controller_server-1] [WARN] [1731704055.686487348] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [ERROR] [1731704055.736914445] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704055.736965859] [tf_help]: Data time: 1731704054s 150826822ns, Transform time: 1731704053s 870423513ns
+[controller_server-1] [WARN] [1731704055.737028437] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [ERROR] [1731704055.737105897] [controller_server]: Controller patience exceeded
+[controller_server-1] [WARN] [1731704055.737200932] [controller_server]: [follow_path] [ActionServer] Aborting handle.
+[planner_server-3] [INFO] [1731704055.738926396] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704054.421 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704055.739013572] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704054.421 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[behavior_server-4] [INFO] [1731704055.753864561] [behavior_server]: Running wait
+[planner_server-3] [INFO] [1731704055.851717771] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704054.555 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704055.851789590] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704054.555 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704055.852227852] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704054.681 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704055.855842306] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704054.681 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704056.199019121] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704054.813 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704056.199079036] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704054.813 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704056.219362544] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704054.944 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704056.219414051] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704054.944 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704056.313088617] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704055.074 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704056.313137611] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704055.074 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704056.994758329] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704055.204 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704056.994823090] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704055.204 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704057.307174816] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704055.337 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704057.317489124] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704055.470 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704057.322825814] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704055.602 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704057.323806574] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704055.602 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704058.632386367] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 343 X 345 at 0.025000 m/pix
+[controller_server-1] [INFO] [1731704059.942420110] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704057.958 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704059.942431784] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704057.958 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704059.973578542] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704058.090 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704059.973584925] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704058.090 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704060.321815309] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704058.349 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[behavior_server-4] [INFO] [1731704060.754241274] [behavior_server]: wait completed successfully
+[controller_server-1] [INFO] [1731704060.803442547] [controller_server]: Received a goal, begin computing control effort.
+[planner_server-3] [INFO] [1731704061.121875605] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704059.923 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704061.125219723] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704060.052 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704061.125284587] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704060.052 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704061.143207274] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704060.183 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704061.143226333] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704060.183 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704061.549676750] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704060.314 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704061.549701200] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704060.314 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [ERROR] [1731704061.653769234] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704061.653813707] [tf_help]: Data time: 1731704060s 884213613ns, Transform time: 1731704060s 422660359ns
+[controller_server-1] [WARN] [1731704061.653853444] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [ERROR] [1731704061.703778409] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704061.703815613] [tf_help]: Data time: 1731704060s 917838441ns, Transform time: 1731704060s 422660359ns
+[controller_server-1] [WARN] [1731704061.703862470] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [ERROR] [1731704061.753791198] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704061.753827162] [tf_help]: Data time: 1731704060s 917838441ns, Transform time: 1731704060s 422660359ns
+[controller_server-1] [WARN] [1731704061.753877132] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [ERROR] [1731704061.803810423] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704061.803849208] [tf_help]: Data time: 1731704060s 917838441ns, Transform time: 1731704060s 422660359ns
+[controller_server-1] [WARN] [1731704061.803896566] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [INFO] [1731704061.853671035] [controller_server]: Passing new path to controller.
+[controller_server-1] [ERROR] [1731704061.854121207] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704061.854136345] [tf_help]: Data time: 1731704060s 917838441ns, Transform time: 1731704060s 422660359ns
+[controller_server-1] [WARN] [1731704061.854183147] [controller_server]: Unable to transform robot pose into global plan's frame
+[planner_server-3] [INFO] [1731704061.895807163] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704060.445 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704061.898400964] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704060.578 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [ERROR] [1731704061.903809416] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704061.903843650] [tf_help]: Data time: 1731704060s 917838441ns, Transform time: 1731704060s 422660359ns
+[controller_server-1] [WARN] [1731704061.903881231] [controller_server]: Unable to transform robot pose into global plan's frame
+[planner_server-3] [INFO] [1731704061.918053054] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704060.706 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704061.925944705] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704060.840 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [ERROR] [1731704061.953937683] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704061.954001206] [tf_help]: Data time: 1731704060s 917838441ns, Transform time: 1731704060s 422660359ns
+[controller_server-1] [WARN] [1731704061.954088977] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [ERROR] [1731704061.954174921] [controller_server]: Controller patience exceeded
+[controller_server-1] [WARN] [1731704061.954367743] [controller_server]: [follow_path] [ActionServer] Aborting handle.
+[controller_server-1] [INFO] [1731704061.973321072] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[controller_server-1] [INFO] [1731704061.974556847] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-1] [ERROR] [1731704062.135097259] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704062.135157013] [tf_help]: Data time: 1731704060s 951038139ns, Transform time: 1731704060s 422660359ns
+[controller_server-1] [WARN] [1731704062.135207773] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [WARN] [1731704062.135338420] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[controller_server-1] [ERROR] [1731704062.135405020] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704062.135412239] [tf_help]: Data time: 1731704060s 951038139ns, Transform time: 1731704060s 422660359ns
+[controller_server-1] [WARN] [1731704062.135437250] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [ERROR] [1731704062.185767726] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704062.185817517] [tf_help]: Data time: 1731704060s 951038139ns, Transform time: 1731704060s 422660359ns
+[controller_server-1] [WARN] [1731704062.185877395] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [ERROR] [1731704062.236306988] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704062.236344263] [tf_help]: Data time: 1731704060s 951038139ns, Transform time: 1731704060s 422660359ns
+[controller_server-1] [WARN] [1731704062.236392008] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [ERROR] [1731704062.286788199] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704062.286819452] [tf_help]: Data time: 1731704060s 951038139ns, Transform time: 1731704060s 422660359ns
+[controller_server-1] [WARN] [1731704062.286856414] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [ERROR] [1731704062.286895245] [controller_server]: Controller patience exceeded
+[controller_server-1] [WARN] [1731704062.286945529] [controller_server]: [follow_path] [ActionServer] Aborting handle.
+[behavior_server-4] [INFO] [1731704062.303628180] [behavior_server]: Running backup
+[behavior_server-4] [ERROR] [1731704062.406062505] [transformPoseInTargetFrame]: Extrapolation Error looking up target frame: Lookup would require extrapolation into the future.  Requested time 1731704060.951038 but the latest data is at time 1731704059.897214, when looking up transform from frame [base_link] to frame [odom]
+[behavior_server-4] 
+[behavior_server-4] [ERROR] [1731704062.406250744] [behavior_server]: Current footprint not available.
+[behavior_server-4] [WARN] [1731704062.406410318] [behavior_server]: Collision Ahead - Exiting DriveOnHeading
+[behavior_server-4] [WARN] [1731704062.406442295] [behavior_server]: backup failed
+[behavior_server-4] [WARN] [1731704062.406475726] [behavior_server]: [backup] [ActionServer] Aborting handle.
+[controller_server-1] [INFO] [1731704062.412644660] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704060.968 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704062.412783722] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704060.968 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704062.423197401] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[planner_server-3] [INFO] [1731704062.423789959] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[controller_server-1] [INFO] [1731704062.579169759] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704061.100 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704062.579230984] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704061.100 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704062.589945030] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704061.232 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704062.590021676] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704061.232 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704062.604424193] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704061.369 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704062.604469045] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704061.369 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704062.622606088] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704061.495 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704062.622629276] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704061.495 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704062.627767047] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704061.626 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [WARN] [1731704062.646517409] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 4.5229 Hz
+[controller_server-1] [INFO] [1731704062.664047652] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-1] [ERROR] [1731704062.664351907] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704062.664365729] [tf_help]: Data time: 1731704060s 951038139ns, Transform time: 1731704060s 422660359ns
+[controller_server-1] [WARN] [1731704062.664404794] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [ERROR] [1731704062.714468426] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704062.714503091] [tf_help]: Data time: 1731704060s 951038139ns, Transform time: 1731704060s 422660359ns
+[controller_server-1] [WARN] [1731704062.714698197] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [ERROR] [1731704062.764433935] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704062.764464323] [tf_help]: Data time: 1731704060s 951038139ns, Transform time: 1731704060s 422660359ns
+[controller_server-1] [WARN] [1731704062.764500427] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [ERROR] [1731704062.814462558] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704062.814505028] [tf_help]: Data time: 1731704060s 951038139ns, Transform time: 1731704060s 422660359ns
+[controller_server-1] [WARN] [1731704062.814563353] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [ERROR] [1731704062.864473819] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704062.864543679] [tf_help]: Data time: 1731704060s 951038139ns, Transform time: 1731704060s 422660359ns
+[controller_server-1] [WARN] [1731704062.864604684] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [ERROR] [1731704062.914480606] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704062.914534153] [tf_help]: Data time: 1731704060s 951038139ns, Transform time: 1731704060s 422660359ns
+[controller_server-1] [WARN] [1731704062.914581255] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [ERROR] [1731704062.964507879] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704062.964574427] [tf_help]: Data time: 1731704060s 951038139ns, Transform time: 1731704060s 422660359ns
+[controller_server-1] [WARN] [1731704062.964631873] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [ERROR] [1731704062.964702203] [controller_server]: Controller patience exceeded
+[controller_server-1] [WARN] [1731704062.964785352] [controller_server]: [follow_path] [ActionServer] Aborting handle.
+[controller_server-1] [INFO] [1731704062.983206458] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[controller_server-1] [INFO] [1731704062.984325724] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-1] [ERROR] [1731704063.134721122] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704063.134798782] [tf_help]: Data time: 1731704060s 951038139ns, Transform time: 1731704060s 422660359ns
+[controller_server-1] [WARN] [1731704063.134865293] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [WARN] [1731704063.135060142] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[controller_server-1] [ERROR] [1731704063.135407968] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704063.135455766] [tf_help]: Data time: 1731704060s 951038139ns, Transform time: 1731704060s 422660359ns
+[controller_server-1] [WARN] [1731704063.135545417] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [ERROR] [1731704063.186033550] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704063.186063078] [tf_help]: Data time: 1731704060s 951038139ns, Transform time: 1731704060s 422660359ns
+[controller_server-1] [WARN] [1731704063.186096692] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [ERROR] [1731704063.236475408] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704063.236519487] [tf_help]: Data time: 1731704060s 951038139ns, Transform time: 1731704060s 422660359ns
+[controller_server-1] [WARN] [1731704063.236589130] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [ERROR] [1731704063.287019578] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704063.287058482] [tf_help]: Data time: 1731704060s 951038139ns, Transform time: 1731704060s 422660359ns
+[controller_server-1] [WARN] [1731704063.287107475] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [ERROR] [1731704063.287162034] [controller_server]: Controller patience exceeded
+[controller_server-1] [WARN] [1731704063.287232390] [controller_server]: [follow_path] [ActionServer] Aborting handle.
+[behavior_server-4] [INFO] [1731704063.303647407] [behavior_server]: Running spin
+[behavior_server-4] [INFO] [1731704063.303818901] [behavior_server]: Turning 1.57 for spin behavior.
+[planner_server-3] [INFO] [1731704063.361414983] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704061.756 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704063.741616917] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704061.886 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704063.741843720] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704061.886 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704067.739444930] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704063.001 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704067.746575829] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704063.130 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704067.776228352] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704063.262 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704068.324810272] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704063.395 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704068.329355500] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704066.197 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704068.329370989] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704066.197 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704068.549303510] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704066.276 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704068.549363628] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704066.405 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704068.549362050] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704066.537 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704068.632330948] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 356 X 345 at 0.025000 m/pix
+[behavior_server-4] [INFO] [1731704068.804068411] [behavior_server]: spin completed successfully
+[planner_server-3] [INFO] [1731704068.812371642] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704066.537 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704068.814434294] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704066.799 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704068.853601435] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-1] [ERROR] [1731704068.853935790] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704068.853964261] [tf_help]: Data time: 1731704067s 617646820ns, Transform time: 1731704063s 895037673ns
+[controller_server-1] [WARN] [1731704068.854015266] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [ERROR] [1731704068.903968446] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704068.903994932] [tf_help]: Data time: 1731704067s 617646820ns, Transform time: 1731704063s 895037673ns
+[controller_server-1] [WARN] [1731704068.904025710] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [ERROR] [1731704068.954073238] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704068.954172981] [tf_help]: Data time: 1731704067s 617646820ns, Transform time: 1731704063s 895037673ns
+[controller_server-1] [WARN] [1731704068.954243726] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [ERROR] [1731704069.004070119] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704069.004129611] [tf_help]: Data time: 1731704067s 617646820ns, Transform time: 1731704063s 895037673ns
+[controller_server-1] [WARN] [1731704069.004206404] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [ERROR] [1731704069.054022268] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704069.054053133] [tf_help]: Data time: 1731704067s 617646820ns, Transform time: 1731704063s 895037673ns
+[controller_server-1] [WARN] [1731704069.054086744] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [ERROR] [1731704069.104106791] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704069.104161903] [tf_help]: Data time: 1731704067s 617646820ns, Transform time: 1731704063s 895037673ns
+[controller_server-1] [WARN] [1731704069.104242265] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [ERROR] [1731704069.154058864] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704069.154464385] [tf_help]: Data time: 1731704067s 617646820ns, Transform time: 1731704063s 895037673ns
+[controller_server-1] [WARN] [1731704069.154658486] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [ERROR] [1731704069.154757030] [controller_server]: Controller patience exceeded
+[controller_server-1] [WARN] [1731704069.154781492] [controller_server]: [follow_path] [ActionServer] Aborting handle.
+[controller_server-1] [INFO] [1731704069.173161974] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[controller_server-1] [INFO] [1731704069.173744982] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-1] [WARN] [1731704069.341217574] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[planner_server-3] [INFO] [1731704069.480873861] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704066.929 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704069.515535205] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704067.848 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704069.766391168] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704067.977 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704069.766479661] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704068.108 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704069.766501967] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704068.241 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704069.766545316] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704068.370 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704069.787315953] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704068.501 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[smoother_server-2] Warning: TF_OLD_DATA ignoring data from the past for frame base_link at time 1731704058.350878 according to authority Authority undetectable
+[smoother_server-2] Possible reasons are listed at http://wiki.ros.org/tf/Errors%20explained
+[smoother_server-2]          at line 294 in ./src/buffer_core.cpp
+[smoother_server-2] Warning: TF_OLD_DATA ignoring data from the past for frame base_link at time 1731704058.384252 according to authority Authority undetectable
+[smoother_server-2] Possible reasons are listed at http://wiki.ros.org/tf/Errors%20explained
+[smoother_server-2]          at line 294 in ./src/buffer_core.cpp
+[bt_navigator-5] Warning: TF_OLD_DATA ignoring data from the past for frame base_link at time 1731704058.350878 according to authority Authority undetectable
+[bt_navigator-5] Possible reasons are listed at http://wiki.ros.org/tf/Errors%20explained
+[bt_navigator-5]          at line 294 in ./src/buffer_core.cpp
+[bt_navigator-5] Warning: TF_OLD_DATA ignoring data from the past for frame base_link at time 1731704058.384252 according to authority Authority undetectable
+[bt_navigator-5] Possible reasons are listed at http://wiki.ros.org/tf/Errors%20explained
+[bt_navigator-5]          at line 294 in ./src/buffer_core.cpp
+[controller_server-1] [INFO] [1731704069.891325985] [controller_server]: Passing new path to controller.
+[planner_server-3] [INFO] [1731704070.632552482] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 356 X 346 at 0.025000 m/pix
+[controller_server-1] [INFO] [1731704070.941328717] [controller_server]: Passing new path to controller.
+[controller_server-1] [INFO] [1731704071.009096875] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704069.289 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704071.127259870] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704069.418 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] Warning: TF_OLD_DATA ignoring data from the past for frame base_link at time 1731704060.017704 according to authority Authority undetectable
+[planner_server-3] Possible reasons are listed at http://wiki.ros.org/tf/Errors%20explained
+[planner_server-3]          at line 294 in ./src/buffer_core.cpp
+[controller_server-1] [ERROR] [1731704071.191450514] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704071.191489486] [tf_help]: Data time: 1731704070s 317938778ns, Transform time: 1731704069s 395879174ns
+[controller_server-1] [WARN] [1731704071.191530634] [controller_server]: Unable to transform robot pose into global plan's frame
+[planner_server-3] [INFO] [1731704071.203177433] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704070.077 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704071.203208939] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704070.077 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [ERROR] [1731704071.241415068] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704071.241439466] [tf_help]: Data time: 1731704070s 317938778ns, Transform time: 1731704069s 395879174ns
+[controller_server-1] [WARN] [1731704071.241469830] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [ERROR] [1731704071.291441390] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704071.291466755] [tf_help]: Data time: 1731704070s 317938778ns, Transform time: 1731704069s 395879174ns
+[controller_server-1] [WARN] [1731704071.291497282] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [ERROR] [1731704071.341426752] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704071.341452061] [tf_help]: Data time: 1731704070s 317938778ns, Transform time: 1731704069s 395879174ns
+[controller_server-1] [WARN] [1731704071.341482506] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [ERROR] [1731704071.391484258] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704071.391537548] [tf_help]: Data time: 1731704070s 317938778ns, Transform time: 1731704069s 395879174ns
+[controller_server-1] [WARN] [1731704071.391587323] [controller_server]: Unable to transform robot pose into global plan's frame
+[smoother_server-2] Warning: TF_OLD_DATA ignoring data from the past for frame base_link at time 1731704060.184248 according to authority Authority undetectable
+[smoother_server-2] Possible reasons are listed at http://wiki.ros.org/tf/Errors%20explained
+[smoother_server-2]          at line 294 in ./src/buffer_core.cpp
+[controller_server-1] [ERROR] [1731704071.441393539] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704071.441414962] [tf_help]: Data time: 1731704070s 317938778ns, Transform time: 1731704069s 395879174ns
+[controller_server-1] [WARN] [1731704071.441436017] [controller_server]: Unable to transform robot pose into global plan's frame
+[planner_server-3] [INFO] [1731704071.447764852] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704070.204 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704071.464549494] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704070.336 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704071.464684154] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704070.336 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [ERROR] [1731704071.491420523] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704071.491448138] [tf_help]: Data time: 1731704070s 817873853ns, Transform time: 1731704069s 395879174ns
+[controller_server-1] [WARN] [1731704071.491482468] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [ERROR] [1731704071.491519610] [controller_server]: Controller patience exceeded
+[controller_server-1] [WARN] [1731704071.491574606] [controller_server]: [follow_path] [ActionServer] Aborting handle.
+[behavior_server-4] [INFO] [1731704071.503460780] [behavior_server]: Running wait
+[planner_server-3] [INFO] [1731704071.729284800] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704070.466 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704071.750349463] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704070.597 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704071.750471309] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704070.597 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] Warning: TF_OLD_DATA ignoring data from the past for frame base_link at time 1731704060.584420 according to authority Authority undetectable
+[planner_server-3] Possible reasons are listed at http://wiki.ros.org/tf/Errors%20explained
+[planner_server-3]          at line 294 in ./src/buffer_core.cpp
+[planner_server-3] Warning: TF_OLD_DATA ignoring data from the past for frame base_link at time 1731704060.617739 according to authority Authority undetectable
+[planner_server-3] Possible reasons are listed at http://wiki.ros.org/tf/Errors%20explained
+[planner_server-3]          at line 294 in ./src/buffer_core.cpp
+[planner_server-3] Warning: TF_OLD_DATA ignoring data from the past for frame base_link at time 1731704060.650856 according to authority Authority undetectable
+[planner_server-3] Possible reasons are listed at http://wiki.ros.org/tf/Errors%20explained
+[planner_server-3]          at line 294 in ./src/buffer_core.cpp
+[planner_server-3] Warning: TF_OLD_DATA ignoring data from the past for frame base_link at time 1731704060.684231 according to authority Authority undetectable
+[planner_server-3] Possible reasons are listed at http://wiki.ros.org/tf/Errors%20explained
+[planner_server-3]          at line 294 in ./src/buffer_core.cpp
+[planner_server-3] Warning: TF_OLD_DATA ignoring data from the past for frame base_link at time 1731704060.717640 according to authority Authority undetectable
+[planner_server-3] Possible reasons are listed at http://wiki.ros.org/tf/Errors%20explained
+[planner_server-3]          at line 294 in ./src/buffer_core.cpp
+[planner_server-3] Warning: TF_OLD_DATA ignoring data from the past for frame base_link at time 1731704060.750812 according to authority Authority undetectable
+[planner_server-3] Possible reasons are listed at http://wiki.ros.org/tf/Errors%20explained
+[planner_server-3]          at line 294 in ./src/buffer_core.cpp
+[planner_server-3] Warning: TF_OLD_DATA ignoring data from the past for frame base_link at time 1731704060.784391 according to authority Authority undetectable
+[planner_server-3] Possible reasons are listed at http://wiki.ros.org/tf/Errors%20explained
+[controller_server-1] Warning: TF_OLD_DATA ignoring data from the past for frame base_link at time 1731704060.584420 according to authority Authority undetectable
+[controller_server-1] Possible reasons are listed at http://wiki.ros.org/tf/Errors%20explained
+[controller_server-1]          at line 294 in ./src/buffer_core.cpp
+[controller_server-1] Warning: TF_OLD_DATA ignoring data from the past for frame base_link at time 1731704060.617739 according to authority Authority undetectable
+[controller_server-1] Possible reasons are listed at http://wiki.ros.org/tf/Errors%20explained
+[controller_server-1]          at line 294 in ./src/buffer_core.cpp
+[controller_server-1] Warning: TF_OLD_DATA ignoring data from the past for frame base_link at time 1731704060.650856 according to authority Authority undetectable
+[controller_server-1] Possible reasons are listed at http://wiki.ros.org/tf/Errors%20explained
+[controller_server-1]          at line 294 in ./src/buffer_core.cpp
+[controller_server-1] Warning: TF_OLD_DATA ignoring data from the past for frame base_link at time 1731704060.684231 according to authority Authority undetectable
+[controller_server-1] Possible reasons are listed at http://wiki.ros.org/tf/Errors%20explained
+[controller_server-1]          at line 294 in ./src/buffer_core.cpp
+[controller_server-1] Warning: TF_OLD_DATA ignoring data from the past for frame base_link at time 1731704060.717640 according to authority Authority undetectable
+[controller_server-1] Possible reasons are listed at http://wiki.ros.org/tf/Errors%20explained
+[controller_server-1]          at line 294 in ./src/buffer_core.cpp
+[controller_server-1] Warning: TF_OLD_DATA ignoring data from the past for frame base_link at time 1731704060.750812 according to authority Authority undetectable
+[controller_server-1] Possible reasons are listed at http://wiki.ros.org/tf/Errors%20explained
+[controller_server-1]          at line 294 in ./src/buffer_core.cpp
+[controller_server-1] Warning: TF_OLD_DATA ignoring data from the past for frame base_link at time 1731704060.784391 according to authority Authority undetectable
+[controller_server-1] Possible reasons are listed at http://wiki.ros.org/tf/Errors%20explained
+[controller_server-1]          at line 294 in ./src/buffer_core.cpp
+[planner_server-3]          at line 294 in ./src/buffer_core.cpp
+[planner_server-3] Warning: TF_OLD_DATA ignoring data from the past for frame base_link at time 1731704060.817623 according to authority Authority undetectable
+[planner_server-3] Possible reasons are listed at http://wiki.ros.org/tf/Errors%20explained
+[planner_server-3]          at line 294 in ./src/buffer_core.cpp
+[planner_server-3] Warning: TF_OLD_DATA ignoring data from the past for frame base_link at time 1731704060.850932 according to authority Authority undetectable
+[planner_server-3] Possible reasons are listed at http://wiki.ros.org/tf/Errors%20explained
+[planner_server-3]          at line 294 in ./src/buffer_core.cpp
+[behavior_server-4] Warning: TF_OLD_DATA ignoring data from the past for frame base_link at time 1731704060.784391 according to authority Authority undetectable
+[behavior_server-4] Possible reasons are listed at http://wiki.ros.org/tf/Errors%20explained
+[behavior_server-4]          at line 294 in ./src/buffer_core.cpp
+[controller_server-1] Warning: TF_OLD_DATA ignoring data from the past for frame base_link at time 1731704060.951038 according to authority Authority undetectable
+[controller_server-1] Possible reasons are listed at http://wiki.ros.org/tf/Errors%20explained
+[controller_server-1]          at line 294 in ./src/buffer_core.cpp
+[controller_server-1] [INFO] [1731704073.175776997] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704071.907 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704073.459181351] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704072.038 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704073.566731803] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704072.432 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704073.626286897] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704072.562 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704073.633130871] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704072.694 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704073.633165059] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704072.694 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704074.763424199] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704072.826 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704074.905995515] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704072.956 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704075.293473302] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704073.087 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704075.308984502] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704073.220 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704075.332205039] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704073.220 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704075.886383792] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704073.350 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704075.980436170] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704073.480 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704076.004303277] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704073.610 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704076.011305243] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704073.741 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704076.011438748] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704073.872 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704076.011509538] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704074.003 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704076.047204549] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704074.134 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704076.062643847] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704074.265 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[behavior_server-4] [INFO] [1731704076.503711092] [behavior_server]: wait completed successfully
+[controller_server-1] [INFO] [1731704076.553899162] [controller_server]: Received a goal, begin computing control effort.
+[planner_server-3] [INFO] [1731704076.632382849] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 356 X 348 at 0.025000 m/pix
+[controller_server-1] [INFO] [1731704077.604369256] [controller_server]: Passing new path to controller.
+[controller_server-1] [ERROR] [1731704077.654675393] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704077.654750089] [tf_help]: Data time: 1731704074s 984704769ns, Transform time: 1731704074s 765442872ns
+[controller_server-1] [WARN] [1731704077.654900777] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [ERROR] [1731704077.704584791] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704077.704619120] [tf_help]: Data time: 1731704074s 984704769ns, Transform time: 1731704074s 765442872ns
+[controller_server-1] [WARN] [1731704077.704670096] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [ERROR] [1731704077.754560783] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704077.754611941] [tf_help]: Data time: 1731704074s 984704769ns, Transform time: 1731704074s 765442872ns
+[controller_server-1] [WARN] [1731704077.754684261] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [ERROR] [1731704077.804541318] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704077.804587987] [tf_help]: Data time: 1731704074s 984704769ns, Transform time: 1731704074s 765442872ns
+[controller_server-1] [WARN] [1731704077.804649838] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [ERROR] [1731704077.854595381] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704077.854630297] [tf_help]: Data time: 1731704074s 984704769ns, Transform time: 1731704074s 765442872ns
+[controller_server-1] [WARN] [1731704077.854676618] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [ERROR] [1731704077.904570286] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704077.904616892] [tf_help]: Data time: 1731704074s 984704769ns, Transform time: 1731704074s 765442872ns
+[controller_server-1] [WARN] [1731704077.904683534] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [ERROR] [1731704077.954673530] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704077.954722324] [tf_help]: Data time: 1731704074s 984704769ns, Transform time: 1731704074s 765442872ns
+[controller_server-1] [WARN] [1731704077.954788009] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [ERROR] [1731704077.954875576] [controller_server]: Controller patience exceeded
+[controller_server-1] [WARN] [1731704077.954985759] [controller_server]: [follow_path] [ActionServer] Aborting handle.
+[controller_server-1] [INFO] [1731704077.973788174] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[controller_server-1] [INFO] [1731704077.976017624] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-1] [ERROR] [1731704078.136750807] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704078.136852171] [tf_help]: Data time: 1731704074s 984704769ns, Transform time: 1731704074s 765442872ns
+[controller_server-1] [WARN] [1731704078.136937837] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [WARN] [1731704078.137222671] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[controller_server-1] [ERROR] [1731704078.137396437] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704078.137416773] [tf_help]: Data time: 1731704074s 984704769ns, Transform time: 1731704074s 765442872ns
+[controller_server-1] [WARN] [1731704078.137470667] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [ERROR] [1731704078.188014289] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704078.188077709] [tf_help]: Data time: 1731704074s 984704769ns, Transform time: 1731704074s 765442872ns
+[controller_server-1] [WARN] [1731704078.188165480] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [ERROR] [1731704078.238808120] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704078.238856307] [tf_help]: Data time: 1731704074s 984704769ns, Transform time: 1731704074s 765442872ns
+[controller_server-1] [WARN] [1731704078.238924318] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [ERROR] [1731704078.289564584] [tf_help]: Transform data too old when converting from odom to map
+[controller_server-1] [ERROR] [1731704078.289633520] [tf_help]: Data time: 1731704074s 984704769ns, Transform time: 1731704074s 765442872ns
+[controller_server-1] [WARN] [1731704078.289856415] [controller_server]: Unable to transform robot pose into global plan's frame
+[controller_server-1] [ERROR] [1731704078.289991075] [controller_server]: Controller patience exceeded
+[controller_server-1] [WARN] [1731704078.290172690] [controller_server]: [follow_path] [ActionServer] Aborting handle.
+[bt_navigator-5] [ERROR] [1731704078.312991234] [bt_navigator]: Goal failed
+[bt_navigator-5] [WARN] [1731704078.313075137] [bt_navigator]: [navigate_to_pose] [ActionServer] Aborting handle.
+[controller_server-1] [INFO] [1731704079.132804863] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704076.887 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704079.132805037] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704076.887 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704079.133026358] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704077.016 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704079.133029699] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704077.016 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704079.133281274] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704077.148 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704079.133504321] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704077.148 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704079.145408630] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704077.282 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704079.145408647] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704077.282 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704079.145602170] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704077.409 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704079.280388869] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704077.409 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704079.280624263] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704077.541 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704079.390484298] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704077.672 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704079.390505213] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704077.672 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704079.951956212] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704078.655 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704079.952754328] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704078.787 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704079.955087555] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704078.925 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704080.138459619] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704079.046 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704080.138595174] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704079.046 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704080.144967349] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704079.182 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704080.145004414] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704079.182 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704080.865662018] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704079.309 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704080.894807242] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704079.441 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704080.894820937] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704079.441 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704081.663472338] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704080.357 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704081.665247662] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704080.488 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704081.673203498] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704080.621 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704081.674672924] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704080.621 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704081.678547191] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704080.754 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704081.678548119] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704080.754 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704081.889010710] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704080.883 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704081.889010806] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704080.883 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704082.187658905] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704081.015 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704082.187674665] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704081.015 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704082.278289217] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704081.142 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704082.367158506] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704081.142 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704082.705700154] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704081.274 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704082.744187858] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704081.405 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704082.826018028] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704081.539 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704083.017413307] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704081.666 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704083.030395573] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704081.798 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704083.201191698] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704081.928 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704083.773632220] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704082.062 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704083.779026959] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704082.193 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704083.847218847] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704082.322 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704086.292732464] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704082.717 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704086.531493938] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704082.854 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704086.812170159] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704082.854 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704086.814394230] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704083.113 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704086.838783588] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704083.113 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704087.363393936] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704083.373 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704087.363391347] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704083.373 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704087.391560413] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704083.632 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[controller_server-1] [INFO] [1731704087.391572507] [local_costmap.local_costmap]: Message Filter dropping message: frame 'laser' at time 1731704083.632 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[planner_server-3] [INFO] [1731704087.664681480] [global_costmap.global_costmap]: Message Filter dropping message: frame 'laser' at time 1731704083.764 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+^C[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[smoother_server-2] [INFO] [1731704088.324920162] [rclcpp]: signal_handler(signum=2)
+[smoother_server-2] [INFO] [1731704088.325051392] [smoother_server]: Running Nav2 LifecycleNode rcl preshutdown (smoother_server)
+[smoother_server-2] [INFO] [1731704088.325149166] [smoother_server]: Deactivating
+[smoother_server-2] [INFO] [1731704088.325171474] [smoother_server]: Destroying bond (smoother_server) to lifecycle manager.
+[velocity_smoother-7] [INFO] [1731704088.324912620] [rclcpp]: signal_handler(signum=2)
+[velocity_smoother-7] [INFO] [1731704088.325091439] [velocity_smoother]: Running Nav2 LifecycleNode rcl preshutdown (velocity_smoother)
+[velocity_smoother-7] [INFO] [1731704088.325186379] [velocity_smoother]: Deactivating
+[bt_navigator-5] [INFO] [1731704088.324917483] [rclcpp]: signal_handler(signum=2)
+[bt_navigator-5] [INFO] [1731704088.325061539] [bt_navigator]: Running Nav2 LifecycleNode rcl preshutdown (bt_navigator)
+[bt_navigator-5] [INFO] [1731704088.325161676] [bt_navigator]: Deactivating
+[bt_navigator-5] [INFO] [1731704088.325201371] [bt_navigator]: Destroying bond (bt_navigator) to lifecycle manager.
+[lifecycle_manager-8] [INFO] [1731704088.324917205] [rclcpp]: signal_handler(signum=2)
+[lifecycle_manager-8] [INFO] [1731704088.325173557] [lifecycle_manager_navigation]: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager_navigation)
+[lifecycle_manager-8] [INFO] [1731704088.325211509] [lifecycle_manager_navigation]: Terminating bond timer...
+[behavior_server-4] [INFO] [1731704088.324920422] [rclcpp]: signal_handler(signum=2)
+[behavior_server-4] [INFO] [1731704088.325022603] [behavior_server]: Running Nav2 LifecycleNode rcl preshutdown (behavior_server)
+[behavior_server-4] [INFO] [1731704088.325107177] [behavior_server]: Deactivating
+[behavior_server-4] [INFO] [1731704088.325150004] [behavior_server]: Destroying bond (behavior_server) to lifecycle manager.
+[waypoint_follower-6] [INFO] [1731704088.324942011] [rclcpp]: signal_handler(signum=2)
+[waypoint_follower-6] [INFO] [1731704088.325073402] [waypoint_follower]: Running Nav2 LifecycleNode rcl preshutdown (waypoint_follower)
+[waypoint_follower-6] [INFO] [1731704088.325174046] [waypoint_follower]: Deactivating
+[waypoint_follower-6] [INFO] [1731704088.325207330] [waypoint_follower]: Destroying bond (waypoint_follower) to lifecycle manager.
+[controller_server-1] [INFO] [1731704088.324973931] [rclcpp]: signal_handler(signum=2)
+[controller_server-1] [INFO] [1731704088.325074141] [controller_server]: Running Nav2 LifecycleNode rcl preshutdown (controller_server)
+[controller_server-1] [INFO] [1731704088.325174567] [controller_server]: Deactivating
+[controller_server-1] [INFO] [1731704088.325240183] [local_costmap.local_costmap]: Deactivating
+[planner_server-3] [INFO] [1731704088.324973293] [rclcpp]: signal_handler(signum=2)
+[planner_server-3] [INFO] [1731704088.325064374] [planner_server]: Running Nav2 LifecycleNode rcl preshutdown (planner_server)
+[planner_server-3] [INFO] [1731704088.325152569] [planner_server]: Deactivating
+[planner_server-3] [INFO] [1731704088.325206125] [global_costmap.global_costmap]: Deactivating
+[velocity_smoother-7] [INFO] [1731704088.325227340] [velocity_smoother]: Destroying bond (velocity_smoother) to lifecycle manager.
+[controller_server-1] [INFO] [1731704088.326555718] [controller_server]: Destroying bond (controller_server) to lifecycle manager.
+[behavior_server-4] [INFO] [1731704088.335553281] [behavior_server]: Cleaning up
+[smoother_server-2] [INFO] [1731704088.335702187] [smoother_server]: Cleaning up
+[waypoint_follower-6] [INFO] [1731704088.335698862] [waypoint_follower]: Cleaning up
+[velocity_smoother-7] [INFO] [1731704088.335697951] [velocity_smoother]: Cleaning up
+[velocity_smoother-7] [INFO] [1731704088.335825346] [velocity_smoother]: Destroying bond (velocity_smoother) to lifecycle manager.
+[bt_navigator-5] [INFO] [1731704088.335701962] [bt_navigator]: Cleaning up
+[controller_server-1] [INFO] [1731704088.338007239] [controller_server]: Cleaning up
+[controller_server-1] [INFO] [1731704088.338482363] [local_costmap.local_costmap]: Cleaning up
+[velocity_smoother-7] [INFO] [1731704088.348279471] [velocity_smoother]: Destroying
+[behavior_server-4] [INFO] [1731704088.348589121] [behavior_server]: Destroying bond (behavior_server) to lifecycle manager.
+[waypoint_follower-6] [INFO] [1731704088.356843029] [waypoint_follower]: Destroying bond (waypoint_follower) to lifecycle manager.
+[smoother_server-2] [INFO] [1731704088.361553806] [smoother_server]: Destroying bond (smoother_server) to lifecycle manager.
+[waypoint_follower-6] [INFO] [1731704088.405196664] [waypoint_follower]: Destroying
+[smoother_server-2] [INFO] [1731704088.411098938] [smoother_server]: Destroying
+[lifecycle_manager-8] [INFO] [1731704088.459680871] [lifecycle_manager_navigation]: Destroying lifecycle_manager_navigation
+[INFO] [velocity_smoother-7]: process has finished cleanly [pid 20105]
+[INFO] [waypoint_follower-6]: process has finished cleanly [pid 20103]
+[INFO] [lifecycle_manager-8]: process has finished cleanly [pid 20107]
+[INFO] [smoother_server-2]: process has finished cleanly [pid 20095]
+[planner_server-3] [INFO] [1731704088.632560763] [planner_server]: Deactivating plugin GridBased of type NavfnPlanner
+[planner_server-3] [INFO] [1731704088.632784444] [planner_server]: Destroying bond (planner_server) to lifecycle manager.
+[planner_server-3] [INFO] [1731704088.632893342] [planner_server]: Cleaning up
+[planner_server-3] [INFO] [1731704088.761441588] [global_costmap.global_costmap]: Cleaning up
+[planner_server-3] [INFO] [1731704088.883337856] [planner_server]: Cleaning up plugin GridBased of type NavfnPlanner
+[planner_server-3] [INFO] [1731704088.883543526] [planner_server]: Destroying plugin GridBased of type NavfnPlanner
+[controller_server-1] [INFO] [1731704088.911415975] [controller_server]: Destroying bond (controller_server) to lifecycle manager.
+[controller_server-1] [INFO] [1731704088.914207403] [local_costmap.local_costmap]: Destroying
+[planner_server-3] [INFO] [1731704088.964420998] [planner_server]: Destroying bond (planner_server) to lifecycle manager.
+[behavior_server-4] [INFO] [1731704088.974806760] [behavior_server]: Destroying
+[planner_server-3] [INFO] [1731704089.097799367] [global_costmap.global_costmap]: Destroying
+[controller_server-1] [INFO] [1731704089.102820607] [controller_server]: Destroying
+[INFO] [behavior_server-4]: process has finished cleanly [pid 20099]
+[planner_server-3] [INFO] [1731704089.503914977] [planner_server]: Destroying
+[INFO] [controller_server-1]: process has finished cleanly [pid 20093]
+[bt_navigator-5] [INFO] [1731704089.662952329] [bt_navigator]: Completed Cleaning up
+[bt_navigator-5] [INFO] [1731704089.663016958] [bt_navigator]: Destroying bond (bt_navigator) to lifecycle manager.
+[INFO] [planner_server-3]: process has finished cleanly [pid 20097]
+[bt_navigator-5] [INFO] [1731704089.682275963] [bt_navigator]: Destroying
+[INFO] [bt_navigator-5]: process has finished cleanly [pid 20101]

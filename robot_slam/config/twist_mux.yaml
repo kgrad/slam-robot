@@ -1,5 +1,5 @@
 twist_mux:
-  ros_parameters:
+  ros__parameters:
     topics:
       navigation:
         topic: cmd_vel

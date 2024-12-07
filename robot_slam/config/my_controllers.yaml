@@ -11,12 +11,16 @@ controller_manager:
 
 diff_cont:
   ros__parameters:
-    publish_rate: 50.0
-    base_frame_id: base_link
+
+    publish_rate: 50.0  # Increased for better velocity updates
+
+    base_frame_id: base_footprint  # Reverted frame
+
     left_wheel_names: ['left_wheel_joint']
     right_wheel_names: ['right_wheel_joint']
-    wheel_separation: 0.297
-    wheel_radius: 0.033
+    wheel_separation: 0.14  # Make sure this matches your robot
+    wheel_radius: 0.035     # Make sure this matches your robot
+
     use_stamped_vel: false
 
     # open_loop: false    
@@ -26,16 +30,33 @@ diff_cont:
     # left_wheel_radius_multiplier: x
     # right_wheel_radius_multiplier: x
 
-    # odom_frame_id: x
-    # pose_covariance_diagonal: x
-    # twist_covariance_diagonal: x
-    # open_loop: x
-    # enable_odom_tf: x
+    odom_frame_id: "odom"
+    pose_covariance_diagonal: [0.0001, 0.0001, 0.0001, 0.0001, 0.0001, 0.01]
+    twist_covariance_diagonal: [0.0001, 0.0001, 0.0001, 0.0001, 0.0001, 0.01]
+    enable_odom_tf: true
 
     # cmd_vel_timeout: x
     # publish_limited_velocity: x
-    # velocity_rolling_window_size: x
-    
+    velocity_rolling_window_size: 10
+
+    # Add velocity limits
+    linear.x.has_velocity_limits: true
+    linear.x.has_acceleration_limits: true
+    linear.x.has_jerk_limits: true  # Add jerk limits
+    linear.x.max_velocity: 0.3
+    linear.x.min_velocity: -0.3
+    linear.x.max_acceleration: 0.5
+    linear.x.min_acceleration: -0.5
+    linear.x.max_jerk: 1.0
+
+    angular.z.has_velocity_limits: true
+    angular.z.has_acceleration_limits: true
+    angular.z.has_jerk_limits: true  # Add jerk limits
+    angular.z.max_velocity: 1.0
+    angular.z.min_velocity: -1.0
+    angular.z.max_acceleration: 0.8
+    angular.z.min_acceleration: -0.8
+    angular.z.max_jerk: 1.5
 
     # linear.x.has_velocity_limits: false
     # linear.x.has_acceleration_limits: false
@@ -57,27 +78,16 @@ diff_cont:
     # angular.z.max_jerk: NAN
     # angular.z.min_jerk: NAN
 
-joint_broad:
-  ros__parameters:
-    # Add any additional parameters here if needed
-    type: joint_state_broadcaster/JointStateBroadcaster
+    # Add position feedback
+    position_feedback: true
+    position_timestep: 0.1
 
-diff_drive_controller:
-  ros__parameters:
-    publish_rate: 50
-    base_frame_id: "base_link"
-    odom_frame_id: "odom"
-    enable_odom_tf: true
-    wheel_separation: 0.297
-    wheel_radius: 0.033
-    left_wheel_names: ["left_wheel_joint"]
-    right_wheel_names: ["right_wheel_joint"]
-    use_sim_time: false
-    command_interfaces: ["velocity"]
-    state_interfaces: ["velocity", "position"]
-    odometry:
-      use_odom_frame: true
-      odom_frame_id: "odom"
-      base_frame_id: "base_footprint"
-      publish_odom: true
-      publish_tf: true
+    # Add velocity smoothing parameters
+    velocity_feedback: true
+    velocity_time_constant: 0.1
+
+
+
+
+# joint_broad:
+#   ros__parameters:

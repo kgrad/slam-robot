@@ -1,0 +1,330 @@
+robot-host@robothost:~/dev_ws$ rviz2
+Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+[INFO] [1731703932.382127450] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1731703932.382206896] [rviz2]: OpenGl version: 4.6 (GLSL 4.6)
+[INFO] [1731703932.396980539] [rviz2]: Stereo is NOT SUPPORTED
+[ERROR] [1731703957.150939179] [rviz2]: Lookup would require extrapolation into the future.  Requested time 1731703958.270289 but the latest data is at time 1731703956.983088, when looking up transform from frame [laser] to frame [odom]
+[INFO] [1731703958.502076999] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703957.089 for reason 'discarding message because the queue is full'
+[INFO] [1731703958.628948528] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703957.220 for reason 'discarding message because the queue is full'
+[INFO] [1731703958.757880805] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703957.286 for reason 'discarding message because the queue is full'
+[INFO] [1731703958.885572244] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703957.414 for reason 'discarding message because the queue is full'
+[INFO] [1731703959.012986325] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703957.548 for reason 'discarding message because the queue is full'
+[INFO] [1731703959.268997636] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703957.808 for reason 'discarding message because the queue is full'
+[INFO] [1731703959.397380148] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703957.940 for reason 'discarding message because the queue is full'
+[INFO] [1731703959.557735714] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703958.073 for reason 'discarding message because the queue is full'
+[INFO] [1731703960.324978798] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703958.857 for reason 'discarding message because the queue is full'
+[INFO] [1731703960.453170482] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703958.990 for reason 'discarding message because the queue is full'
+[INFO] [1731703960.581271435] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703959.117 for reason 'discarding message because the queue is full'
+[INFO] [1731703960.709783120] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703959.249 for reason 'discarding message because the queue is full'
+[INFO] [1731703960.837254827] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703959.380 for reason 'discarding message because the queue is full'
+[INFO] [1731703960.965747765] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703959.510 for reason 'discarding message because the queue is full'
+[INFO] [1731703961.125629408] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703959.642 for reason 'discarding message because the queue is full'
+[INFO] [1731703961.253873553] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703959.775 for reason 'discarding message because the queue is full'
+[INFO] [1731703961.381130297] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703959.905 for reason 'discarding message because the queue is full'
+[INFO] [1731703961.509927916] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703960.036 for reason 'discarding message because the queue is full'
+[INFO] [1731703961.893737553] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703960.432 for reason 'discarding message because the queue is full'
+[INFO] [1731703962.150351239] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703960.689 for reason 'discarding message because the queue is full'
+[INFO] [1731703962.277195364] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703960.820 for reason 'discarding message because the queue is full'
+[INFO] [1731703962.693824156] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703961.214 for reason 'discarding message because the queue is full'
+[INFO] [1731703962.821907926] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703961.346 for reason 'discarding message because the queue is full'
+[INFO] [1731703963.461598206] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703962.002 for reason 'discarding message because the queue is full'
+[INFO] [1731703963.589164488] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703962.131 for reason 'discarding message because the queue is full'
+[INFO] [1731703964.261242972] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703962.787 for reason 'discarding message because the queue is full'
+[INFO] [1731703964.389029165] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703962.915 for reason 'discarding message because the queue is full'
+[INFO] [1731703964.517137492] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703963.046 for reason 'discarding message because the queue is full'
+[INFO] [1731703964.645932611] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703963.179 for reason 'discarding message because the queue is full'
+[INFO] [1731703964.772810296] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703963.309 for reason 'discarding message because the queue is full'
+[INFO] [1731703964.901091601] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703963.440 for reason 'discarding message because the queue is full'
+[INFO] [1731703965.029481726] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703963.575 for reason 'discarding message because the queue is full'
+[INFO] [1731703965.189351055] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703963.706 for reason 'discarding message because the queue is full'
+[INFO] [1731703965.957488561] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703964.492 for reason 'discarding message because the queue is full'
+[INFO] [1731703966.085652134] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703964.620 for reason 'discarding message because the queue is full'
+[INFO] [1731703966.213188118] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703964.750 for reason 'discarding message because the queue is full'
+[INFO] [1731703966.341009768] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703964.880 for reason 'discarding message because the queue is full'
+[INFO] [1731703966.469772868] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703965.020 for reason 'discarding message because the queue is full'
+[INFO] [1731703966.629631030] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703965.145 for reason 'discarding message because the queue is full'
+[INFO] [1731703966.757596938] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703965.275 for reason 'discarding message because the queue is full'
+[INFO] [1731703966.885425638] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703965.406 for reason 'discarding message because the queue is full'
+[INFO] [1731703967.013156305] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703965.537 for reason 'discarding message because the queue is full'
+[INFO] [1731703967.141409975] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703965.675 for reason 'discarding message because the queue is full'
+[INFO] [1731703967.269796359] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703965.798 for reason 'discarding message because the queue is full'
+[INFO] [1731703967.525574053] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703966.060 for reason 'discarding message because the queue is full'
+[INFO] [1731703967.652993595] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703966.194 for reason 'discarding message because the queue is full'
+[INFO] [1731703967.780976028] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703966.322 for reason 'discarding message because the queue is full'
+[INFO] [1731703967.909415127] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703966.453 for reason 'discarding message because the queue is full'
+[INFO] [1731703968.037736118] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703966.585 for reason 'discarding message because the queue is full'
+[INFO] [1731703968.325887907] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703966.847 for reason 'discarding message because the queue is full'
+[INFO] [1731703968.582036922] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703967.110 for reason 'discarding message because the queue is full'
+[INFO] [1731703968.709823781] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703967.239 for reason 'discarding message because the queue is full'
+[INFO] [1731703968.837535779] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703967.374 for reason 'discarding message because the queue is full'
+[INFO] [1731703969.093109068] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703967.632 for reason 'discarding message because the queue is full'
+[INFO] [1731703969.221724665] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703967.763 for reason 'discarding message because the queue is full'
+[INFO] [1731703969.766022738] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703968.287 for reason 'discarding message because the queue is full'
+[INFO] [1731703969.893448266] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703968.418 for reason 'discarding message because the queue is full'
+[INFO] [1731703970.021243285] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703968.549 for reason 'discarding message because the queue is full'
+[INFO] [1731703970.148880465] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703968.682 for reason 'discarding message because the queue is full'
+[INFO] [1731703970.277229287] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703968.814 for reason 'discarding message because the queue is full'
+[INFO] [1731703970.405571880] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703968.941 for reason 'discarding message because the queue is full'
+[INFO] [1731703970.533794281] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703969.075 for reason 'discarding message because the queue is full'
+[INFO] [1731703970.661622245] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703969.208 for reason 'discarding message because the queue is full'
+[INFO] [1731703971.589806828] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703970.122 for reason 'discarding message because the queue is full'
+[INFO] [1731703971.717322119] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703970.252 for reason 'discarding message because the queue is full'
+[INFO] [1731703971.845591970] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703970.386 for reason 'discarding message because the queue is full'
+[INFO] [1731703971.973001137] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703970.515 for reason 'discarding message because the queue is full'
+[INFO] [1731703972.230017490] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703970.779 for reason 'discarding message because the queue is full'
+[INFO] [1731703972.389552281] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703970.907 for reason 'discarding message because the queue is full'
+[INFO] [1731703972.517659062] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703971.039 for reason 'discarding message because the queue is full'
+[INFO] [1731703973.028974915] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703971.567 for reason 'discarding message because the queue is full'
+[INFO] [1731703973.157223113] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703971.692 for reason 'discarding message because the queue is full'
+[INFO] [1731703973.285937265] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703971.824 for reason 'discarding message because the queue is full'
+[INFO] [1731703973.413762561] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703971.956 for reason 'discarding message because the queue is full'
+[INFO] [1731703973.702085086] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703972.218 for reason 'discarding message because the queue is full'
+[INFO] [1731703973.957007622] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703972.479 for reason 'discarding message because the queue is full'
+[INFO] [1731703974.086094765] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703972.611 for reason 'discarding message because the queue is full'
+[INFO] [1731703974.213746375] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703972.744 for reason 'discarding message because the queue is full'
+[INFO] [1731703974.341749250] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703972.878 for reason 'discarding message because the queue is full'
+[INFO] [1731703974.469779120] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703973.003 for reason 'discarding message because the queue is full'
+[INFO] [1731703974.725597254] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703973.265 for reason 'discarding message because the queue is full'
+[INFO] [1731703975.525110770] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703974.051 for reason 'discarding message because the queue is full'
+[INFO] [1731703975.653549623] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703974.181 for reason 'discarding message because the queue is full'
+[INFO] [1731703975.781329106] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703974.316 for reason 'discarding message because the queue is full'
+[INFO] [1731703975.909555424] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703974.444 for reason 'discarding message because the queue is full'
+[INFO] [1731703976.165726289] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703974.705 for reason 'discarding message because the queue is full'
+[INFO] [1731703976.292891508] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703974.844 for reason 'discarding message because the queue is full'
+[INFO] [1731703977.093848708] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703975.623 for reason 'discarding message because the queue is full'
+[INFO] [1731703977.349621327] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703975.887 for reason 'discarding message because the queue is full'
+[INFO] [1731703977.476876832] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703976.016 for reason 'discarding message because the queue is full'
+[INFO] [1731703977.605471748] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703976.148 for reason 'discarding message because the queue is full'
+[INFO] [1731703977.733863716] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703976.278 for reason 'discarding message because the queue is full'
+[INFO] [1731703977.893246467] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703976.410 for reason 'discarding message because the queue is full'
+[INFO] [1731703978.022067864] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703976.541 for reason 'discarding message because the queue is full'
+[INFO] [1731703978.149375091] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703976.671 for reason 'discarding message because the queue is full'
+[INFO] [1731703978.789222317] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703977.325 for reason 'discarding message because the queue is full'
+[INFO] [1731703978.917062910] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703977.457 for reason 'discarding message because the queue is full'
+[INFO] [1731703979.045506084] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703977.588 for reason 'discarding message because the queue is full'
+[INFO] [1731703979.461267956] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703977.980 for reason 'discarding message because the queue is full'
+[INFO] [1731703979.589481729] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703978.112 for reason 'discarding message because the queue is full'
+[INFO] [1731703979.652912890] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703978.242 for reason 'discarding message because the queue is full'
+[INFO] [1731703979.780824940] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703978.374 for reason 'discarding message because the queue is full'
+[INFO] [1731703979.973839223] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703978.504 for reason 'discarding message because the queue is full'
+[INFO] [1731703980.421367899] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703978.897 for reason 'discarding message because the queue is full'
+[INFO] [1731703980.644804617] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703979.162 for reason 'discarding message because the queue is full'
+[INFO] [1731703980.773078193] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703979.292 for reason 'discarding message because the queue is full'
+[INFO] [1731703980.869573272] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703979.423 for reason 'discarding message because the queue is full'
+[INFO] [1731703981.221944214] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703979.749 for reason 'discarding message because the queue is full'
+[INFO] [1731703981.350871546] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703979.883 for reason 'discarding message because the queue is full'
+[INFO] [1731703981.477717231] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703980.012 for reason 'discarding message because the queue is full'
+[INFO] [1731703981.896357020] [rviz2]: Trying to create a map of size 219 x 246 using 1 swatches
+[ERROR] [1731703981.997867773] [rviz2]: Vertex Program:rviz/glsl120/indexed_8bit_image.vert Fragment Program:rviz/glsl120/indexed_8bit_image.frag GLSL link result : 
+active samplers with a different type refer to the same texture image unit
+[INFO] [1731703983.193796256] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703981.715 for reason 'discarding message because the queue is full'
+[INFO] [1731703983.321073947] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703981.846 for reason 'discarding message because the queue is full'
+[INFO] [1731703983.448935991] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703981.978 for reason 'discarding message because the queue is full'
+[INFO] [1731703983.577255606] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703982.108 for reason 'discarding message because the queue is full'
+[INFO] [1731703983.706234874] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703982.238 for reason 'discarding message because the queue is full'
+[INFO] [1731703984.089268368] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703982.631 for reason 'discarding message because the queue is full'
+[INFO] [1731703984.890001604] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703983.419 for reason 'discarding message because the queue is full'
+[INFO] [1731703985.017322702] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703983.548 for reason 'discarding message because the queue is full'
+[INFO] [1731703985.145098397] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703983.679 for reason 'discarding message because the queue is full'
+[INFO] [1731703985.273864355] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703983.813 for reason 'discarding message because the queue is full'
+[INFO] [1731703985.400939821] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703983.942 for reason 'discarding message because the queue is full'
+[INFO] [1731703985.529245109] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703984.073 for reason 'discarding message because the queue is full'
+[INFO] [1731703985.657600611] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703984.203 for reason 'discarding message because the queue is full'
+[INFO] [1731703985.945381767] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703984.465 for reason 'discarding message because the queue is full'
+[INFO] [1731703986.329660033] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703984.858 for reason 'discarding message because the queue is full'
+[INFO] [1731703986.457716414] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703984.993 for reason 'discarding message because the queue is full'
+[INFO] [1731703986.585274192] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703985.120 for reason 'discarding message because the queue is full'
+[INFO] [1731703986.713474698] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703985.252 for reason 'discarding message because the queue is full'
+[INFO] [1731703986.841677049] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703985.382 for reason 'discarding message because the queue is full'
+[INFO] [1731703987.129959337] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703985.650 for reason 'discarding message because the queue is full'
+[INFO] [1731703987.257090787] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703985.776 for reason 'discarding message because the queue is full'
+[INFO] [1731703987.385958348] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703985.906 for reason 'discarding message because the queue is full'
+[INFO] [1731703987.513044777] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703986.037 for reason 'discarding message because the queue is full'
+[INFO] [1731703988.025710597] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703986.567 for reason 'discarding message because the queue is full'
+[INFO] [1731703988.153088719] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703986.695 for reason 'discarding message because the queue is full'
+[INFO] [1731703988.825586870] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703987.347 for reason 'discarding message because the queue is full'
+[INFO] [1731703988.953325641] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703987.480 for reason 'discarding message because the queue is full'
+[INFO] [1731703989.081780689] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703987.610 for reason 'discarding message because the queue is full'
+[INFO] [1731703989.209502689] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703987.741 for reason 'discarding message because the queue is full'
+[INFO] [1731703989.337273673] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703987.871 for reason 'discarding message because the queue is full'
+[INFO] [1731703989.721346832] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703988.265 for reason 'discarding message because the queue is full'
+[INFO] [1731703989.848823230] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703988.396 for reason 'discarding message because the queue is full'
+[INFO] [1731703990.302411358] [rviz]: Message Filter dropping message: frame 'map' at time 1731703980.535 for reason 'the timestamp on the message is earlier than all the data in the transform cache'
+[INFO] [1731703990.520938929] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703989.051 for reason 'discarding message because the queue is full'
+[INFO] [1731703990.650156359] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703989.181 for reason 'discarding message because the queue is full'
+[INFO] [1731703990.777104769] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703989.314 for reason 'discarding message because the queue is full'
+[INFO] [1731703991.033312994] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703989.575 for reason 'discarding message because the queue is full'
+[INFO] [1731703991.161701653] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703989.705 for reason 'discarding message because the queue is full'
+[INFO] [1731703991.961368138] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703990.491 for reason 'discarding message because the queue is full'
+[INFO] [1731703992.089793357] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703990.623 for reason 'discarding message because the queue is full'
+[INFO] [1731703992.217572675] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703990.753 for reason 'discarding message because the queue is full'
+[INFO] [1731703992.377164196] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703990.885 for reason 'discarding message because the queue is full'
+[INFO] [1731703992.473455181] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703991.015 for reason 'discarding message because the queue is full'
+[INFO] [1731703992.889872066] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703991.408 for reason 'discarding message because the queue is full'
+[INFO] [1731703993.017514293] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703991.539 for reason 'discarding message because the queue is full'
+[INFO] [1731703993.145758359] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703991.670 for reason 'discarding message because the queue is full'
+[INFO] [1731703993.273519527] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703991.805 for reason 'discarding message because the queue is full'
+[INFO] [1731703993.657174800] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703992.194 for reason 'discarding message because the queue is full'
+[INFO] [1731703993.785825581] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703992.325 for reason 'discarding message because the queue is full'
+[INFO] [1731703993.913875940] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703992.456 for reason 'discarding message because the queue is full'
+[INFO] [1731703994.457742506] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703992.989 for reason 'discarding message because the queue is full'
+[INFO] [1731703994.585643718] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703993.112 for reason 'discarding message because the queue is full'
+[INFO] [1731703994.841736736] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703993.373 for reason 'discarding message because the queue is full'
+[INFO] [1731703994.969714715] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703993.504 for reason 'discarding message because the queue is full'
+[INFO] [1731703995.097161741] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703993.638 for reason 'discarding message because the queue is full'
+[INFO] [1731703995.353041846] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703993.899 for reason 'discarding message because the queue is full'
+[INFO] [1731703995.481185848] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703994.028 for reason 'discarding message because the queue is full'
+[INFO] [1731703996.153986567] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703994.684 for reason 'discarding message because the queue is full'
+[INFO] [1731703996.280989609] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703994.815 for reason 'discarding message because the queue is full'
+[INFO] [1731703996.409692307] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703994.946 for reason 'discarding message because the queue is full'
+[INFO] [1731703996.536933632] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703995.079 for reason 'discarding message because the queue is full'
+[INFO] [1731703996.665208885] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703995.207 for reason 'discarding message because the queue is full'
+[INFO] [1731703996.793049319] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703995.338 for reason 'discarding message because the queue is full'
+[INFO] [1731703996.953635011] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703995.470 for reason 'discarding message because the queue is full'
+[INFO] [1731703997.081411514] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703995.603 for reason 'discarding message because the queue is full'
+[INFO] [1731703997.593132461] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703996.125 for reason 'discarding message because the queue is full'
+[INFO] [1731703997.721357438] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703996.255 for reason 'discarding message because the queue is full'
+[INFO] [1731703997.849368918] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703996.388 for reason 'discarding message because the queue is full'
+[INFO] [1731703997.977339919] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703996.518 for reason 'discarding message because the queue is full'
+[INFO] [1731703998.105728883] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703996.648 for reason 'discarding message because the queue is full'
+[INFO] [1731703998.393207540] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703996.912 for reason 'discarding message because the queue is full'
+[INFO] [1731703998.521558970] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703997.045 for reason 'discarding message because the queue is full'
+[INFO] [1731703998.652045752] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703997.173 for reason 'discarding message because the queue is full'
+[INFO] [1731703998.777239352] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703997.303 for reason 'discarding message because the queue is full'
+[INFO] [1731703999.161043216] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703997.698 for reason 'discarding message because the queue is full'
+[INFO] [1731703999.289863613] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703997.828 for reason 'discarding message because the queue is full'
+[INFO] [1731703999.417518795] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703997.959 for reason 'discarding message because the queue is full'
+[INFO] [1731703999.545921249] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703998.089 for reason 'discarding message because the queue is full'
+[INFO] [1731703999.897973248] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703998.482 for reason 'discarding message because the queue is full'
+[INFO] [1731704000.025438872] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703998.613 for reason 'discarding message because the queue is full'
+[INFO] [1731704000.153736889] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703998.745 for reason 'discarding message because the queue is full'
+[INFO] [1731704000.281374389] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703998.874 for reason 'discarding message because the queue is full'
+[INFO] [1731704000.409729497] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703999.007 for reason 'discarding message because the queue is full'
+[INFO] [1731704000.537160120] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703999.138 for reason 'discarding message because the queue is full'
+[INFO] [1731704000.665700705] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703999.269 for reason 'discarding message because the queue is full'
+[INFO] [1731704000.793384156] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703999.398 for reason 'discarding message because the queue is full'
+[INFO] [1731704000.921227617] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703999.530 for reason 'discarding message because the queue is full'
+[INFO] [1731704001.049717632] [rviz]: Message Filter dropping message: frame 'laser' at time 1731703999.661 for reason 'discarding message because the queue is full'
+[INFO] [1731704001.785855220] [rviz]: Message Filter dropping message: frame 'laser' at time 1731704000.252 for reason 'discarding message because the queue is full'
+[INFO] [1731704002.681413878] [rviz]: Message Filter dropping message: frame 'laser' at time 1731704000.514 for reason 'discarding message because the queue is full'
+[INFO] [1731704002.745584720] [rviz]: Message Filter dropping message: frame 'laser' at time 1731704000.644 for reason 'discarding message because the queue is full'
+[INFO] [1731704003.225443840] [rviz]: Message Filter dropping message: frame 'laser' at time 1731704000.774 for reason 'discarding message because the queue is full'
+[INFO] [1731704003.353372395] [rviz]: Message Filter dropping message: frame 'laser' at time 1731704000.905 for reason 'discarding message because the queue is full'
+[INFO] [1731704005.528793522] [rviz]: Message Filter dropping message: frame 'laser' at time 1731704003.166 for reason 'discarding message because the queue is full'
+[INFO] [1731704005.689100630] [rviz]: Message Filter dropping message: frame 'laser' at time 1731704003.397 for reason 'discarding message because the queue is full'
+[INFO] [1731704005.785616891] [rviz]: Message Filter dropping message: frame 'laser' at time 1731704003.531 for reason 'discarding message because the queue is full'
+[INFO] [1731704006.073482343] [rviz]: Message Filter dropping message: frame 'laser' at time 1731704003.800 for reason 'discarding message because the queue is full'
+[INFO] [1731704006.233772495] [rviz]: Message Filter dropping message: frame 'laser' at time 1731704004.049 for reason 'discarding message because the queue is full'
+[INFO] [1731704006.841910120] [rviz]: Message Filter dropping message: frame 'laser' at time 1731704004.181 for reason 'discarding message because the queue is full'
+[INFO] [1731704027.904932629] [rviz]: Message Filter dropping message: frame 'laser' at time 1731704026.257 for reason 'discarding message because the queue is full'
+[INFO] [1731704028.097761964] [rviz]: Message Filter dropping message: frame 'laser' at time 1731704026.394 for reason 'discarding message because the queue is full'
+[INFO] [1731704028.769758916] [rviz]: Message Filter dropping message: frame 'laser' at time 1731704027.176 for reason 'discarding message because the queue is full'
+[INFO] [1731704029.377757789] [rviz]: Message Filter dropping message: frame 'laser' at time 1731704027.697 for reason 'discarding message because the queue is full'
+[INFO] [1731704029.472828993] [rviz]: Message Filter dropping message: frame 'laser' at time 1731704027.826 for reason 'discarding message because the queue is full'
+[INFO] [1731704029.569418071] [rviz]: Message Filter dropping message: frame 'laser' at time 1731704027.957 for reason 'discarding message because the queue is full'
+[INFO] [1731704029.668452138] [rviz2]: Trying to create a map of size 219 x 246 using 1 swatches
+[INFO] [1731704029.761247000] [rviz]: Message Filter dropping message: frame 'laser' at time 1731704028.087 for reason 'discarding message because the queue is full'
+[INFO] [1731704029.953839631] [rviz]: Message Filter dropping message: frame 'laser' at time 1731704028.219 for reason 'discarding message because the queue is full'
+[INFO] [1731704030.049161427] [rviz]: Message Filter dropping message: frame 'laser' at time 1731704028.350 for reason 'discarding message because the queue is full'
+[INFO] [1731704030.145921008] [rviz]: Message Filter dropping message: frame 'laser' at time 1731704028.481 for reason 'discarding message because the queue is full'
+[INFO] [1731704030.241132813] [rviz]: Message Filter dropping message: frame 'laser' at time 1731704028.612 for reason 'discarding message because the queue is full'
+[INFO] [1731704030.369598616] [rviz]: Message Filter dropping message: frame 'laser' at time 1731704028.744 for reason 'discarding message because the queue is full'
+[INFO] [1731704030.401871593] [rviz]: Message Filter dropping message: frame 'laser' at time 1731704028.875 for reason 'discarding message because the queue is full'
+[INFO] [1731704030.561557499] [rviz]: Message Filter dropping message: frame 'laser' at time 1731704029.071 for reason 'discarding message because the queue is full'
+[INFO] [1731704030.657662527] [rviz]: Message Filter dropping message: frame 'laser' at time 1731704029.201 for reason 'discarding message because the queue is full'
+[INFO] [1731704030.784961792] [rviz]: Message Filter dropping message: frame 'laser' at time 1731704029.335 for reason 'discarding message because the queue is full'
+[INFO] [1731704030.945600382] [rviz]: Message Filter dropping message: frame 'laser' at time 1731704029.464 for reason 'discarding message because the queue is full'
+[INFO] [1731704031.585285288] [rviz]: Message Filter dropping message: frame 'laser' at time 1731704030.118 for reason 'discarding message because the queue is full'
+[INFO] [1731704031.713060646] [rviz]: Message Filter dropping message: frame 'laser' at time 1731704030.249 for reason 'discarding message because the queue is full'
+[INFO] [1731704031.842796773] [rviz]: Message Filter dropping message: frame 'laser' at time 1731704030.380 for reason 'discarding message because the queue is full'
+[INFO] [1731704032.225673001] [rviz]: Message Filter dropping message: frame 'laser' at time 1731704030.774 for reason 'discarding message because the queue is full'
+[INFO] [1731704032.385663628] [rviz]: Message Filter dropping message: frame 'laser' at time 1731704030.904 for reason 'discarding message because the queue is full'
+[INFO] [1731704033.153650714] [rviz]: Message Filter dropping message: frame 'laser' at time 1731704031.690 for reason 'discarding message because the queue is full'
+[INFO] [1731704033.826047898] [rviz]: Message Filter dropping message: frame 'laser' at time 1731704032.345 for reason 'discarding message because the queue is full'
+[INFO] [1731704033.953513075] [rviz]: Message Filter dropping message: frame 'laser' at time 1731704032.477 for reason 'discarding message because the queue is full'
+[INFO] [1731704034.081640175] [rviz]: Message Filter dropping message: frame 'laser' at time 1731704032.607 for reason 'discarding message because the queue is full'
+[INFO] [1731704034.209806276] [rviz]: Message Filter dropping message: frame 'laser' at time 1731704032.739 for reason 'discarding message because the queue is full'
+[INFO] [1731704034.337713455] [rviz]: Message Filter dropping message: frame 'laser' at time 1731704032.870 for reason 'discarding message because the queue is full'
+[INFO] [1731704034.450077361] [rviz2]: Setting goal pose: Frame:map, Position(-0.144012, 0.447194, 0), Orientation(0, 0, 0.833783, 0.552093) = Angle: 1.97185
+[INFO] [1731704034.849383698] [rviz]: Message Filter dropping message: frame 'laser' at time 1731704033.394 for reason 'discarding message because the queue is full'
+[INFO] [1731704034.977674960] [rviz]: Message Filter dropping message: frame 'laser' at time 1731704033.528 for reason 'discarding message because the queue is full'
+[INFO] [1731704035.521332245] [rviz]: Message Filter dropping message: frame 'laser' at time 1731704034.049 for reason 'discarding message because the queue is full'
+[INFO] [1731704035.650423817] [rviz]: Message Filter dropping message: frame 'laser' at time 1731704034.179 for reason 'discarding message because the queue is full'
+[INFO] [1731704035.777709226] [rviz]: Message Filter dropping message: frame 'laser' at time 1731704034.310 for reason 'discarding message because the queue is full'
+[INFO] [1731704035.874954876] [rviz2]: Trying to create a map of size 220 x 261 using 1 swatches
+[INFO] [1731704035.905769552] [rviz]: Message Filter dropping message: frame 'laser' at time 1731704034.443 for reason 'discarding message because the queue is full'
+[INFO] [1731704036.033190644] [rviz]: Message Filter dropping message: frame 'laser' at time 1731704034.577 for reason 'discarding message because the queue is full'
+[INFO] [1731704036.289814272] [rviz]: Message Filter dropping message: frame 'laser' at time 1731704034.834 for reason 'discarding message because the queue is full'
+[INFO] [1731704036.645954261] [rviz2]: Trying to create a map of size 220 x 261 using 1 swatches
+[INFO] [1731704036.899792929] [rviz2]: Trying to create a map of size 225 x 267 using 1 swatches
+[INFO] [1731704037.669414447] [rviz2]: Trying to create a map of size 225 x 267 using 1 swatches
+[INFO] [1731704037.697670554] [rviz]: Message Filter dropping message: frame 'laser' at time 1731704035.359 for reason 'discarding message because the queue is full'
+[INFO] [1731704037.793228195] [rviz]: Message Filter dropping message: frame 'laser' at time 1731704035.489 for reason 'discarding message because the queue is full'
+[INFO] [1731704037.953327042] [rviz]: Message Filter dropping message: frame 'laser' at time 1731704035.755 for reason 'discarding message because the queue is full'
+[INFO] [1731704038.883966505] [rviz2]: Trying to create a map of size 225 x 268 using 1 swatches
+[INFO] [1731704038.944973580] [rviz]: Message Filter dropping message: frame 'laser' at time 1731704037.061 for reason 'discarding message because the queue is full'
+[INFO] [1731704039.297428370] [rviz]: Message Filter dropping message: frame 'laser' at time 1731704037.588 for reason 'discarding message because the queue is full'
+[INFO] [1731704039.393911289] [rviz]: Message Filter dropping message: frame 'laser' at time 1731704037.716 for reason 'discarding message because the queue is full'
+[INFO] [1731704039.651503987] [rviz2]: Trying to create a map of size 225 x 268 using 1 swatches
+[INFO] [1731704039.681648491] [rviz]: Message Filter dropping message: frame 'laser' at time 1731704037.849 for reason 'discarding message because the queue is full'
+[INFO] [1731704039.745357315] [rviz]: Message Filter dropping message: frame 'laser' at time 1731704038.109 for reason 'discarding message because the queue is full'
+[INFO] [1731704039.875240841] [rviz2]: Trying to create a map of size 225 x 269 using 1 swatches
+[INFO] [1731704040.643580286] [rviz2]: Trying to create a map of size 225 x 269 using 1 swatches
+[INFO] [1731704045.892803635] [rviz2]: Trying to create a map of size 241 x 326 using 1 swatches
+[INFO] [1731704046.887714413] [rviz2]: Trying to create a map of size 286 x 326 using 1 swatches
+[INFO] [1731704047.650587839] [rviz2]: Trying to create a map of size 286 x 326 using 1 swatches
+[INFO] [1731704047.877189644] [rviz2]: Trying to create a map of size 328 x 326 using 1 swatches
+[INFO] [1731704048.899629281] [rviz2]: Trying to create a map of size 336 x 326 using 1 swatches
+[INFO] [1731704049.666655827] [rviz2]: Trying to create a map of size 336 x 326 using 1 swatches
+[INFO] [1731704051.909784595] [rviz2]: Trying to create a map of size 343 x 326 using 1 swatches
+[INFO] [1731704053.667850168] [rviz2]: Trying to create a map of size 343 x 326 using 1 swatches
+[INFO] [1731704057.893615819] [rviz2]: Trying to create a map of size 343 x 345 using 1 swatches
+[INFO] [1731704058.674890267] [rviz2]: Trying to create a map of size 343 x 345 using 1 swatches
+[INFO] [1731704067.879540448] [rviz2]: Trying to create a map of size 356 x 345 using 1 swatches
+[INFO] [1731704068.656686451] [rviz2]: Trying to create a map of size 356 x 345 using 1 swatches
+[INFO] [1731704069.877637193] [rviz2]: Trying to create a map of size 356 x 346 using 1 swatches
+[INFO] [1731704070.656445960] [rviz2]: Trying to create a map of size 356 x 346 using 1 swatches
+[INFO] [1731704075.897623412] [rviz2]: Trying to create a map of size 356 x 348 using 1 swatches
+[INFO] [1731704077.659543390] [rviz2]: Trying to create a map of size 356 x 348 using 1 swatches
+Warning: TF_OLD_DATA ignoring data from the past for frame base_link at time 1731704081.784691 according to authority Authority undetectable
+Possible reasons are listed at http://wiki.ros.org/tf/Errors%20explained
+         at line 294 in ./src/buffer_core.cpp
+Warning: TF_OLD_DATA ignoring data from the past for frame base_link at time 1731704082.184713 according to authority Authority undetectable
+Possible reasons are listed at http://wiki.ros.org/tf/Errors%20explained
+         at line 294 in ./src/buffer_core.cpp
+Warning: TF_OLD_DATA ignoring data from the past for frame base_link at time 1731704082.218193 according to authority Authority undetectable
+Possible reasons are listed at http://wiki.ros.org/tf/Errors%20explained
+         at line 294 in ./src/buffer_core.cpp
+Warning: TF_OLD_DATA ignoring data from the past for frame base_link at time 1731704082.251473 according to authority Authority undetectable
+Possible reasons are listed at http://wiki.ros.org/tf/Errors%20explained
+         at line 294 in ./src/buffer_core.cpp
+Warning: TF_OLD_DATA ignoring data from the past for frame base_link at time 1731704082.284774 according to authority Authority undetectable
+Possible reasons are listed at http://wiki.ros.org/tf/Errors%20explained
+         at line 294 in ./src/buffer_core.cpp
+Warning: TF_OLD_DATA ignoring data from the past for frame base_link at time 1731704082.318148 according to authority Authority undetectable
+Possible reasons are listed at http://wiki.ros.org/tf/Errors%20explained
+         at line 294 in ./src/buffer_core.cpp
+Warning: TF_OLD_DATA ignoring data from the past for frame base_link at time 1731704082.351435 according to authority Authority undetectable
+Possible reasons are listed at http://wiki.ros.org/tf/Errors%20explained
+         at line 294 in ./src/buffer_core.cpp
+Warning: TF_OLD_DATA ignoring data from the past for frame base_link at time 1731704082.384610 according to authority Authority undetectable
+Possible reasons are listed at http://wiki.ros.org/tf/Errors%20explained
+         at line 294 in ./src/buffer_core.cpp
+Warning: TF_OLD_DATA ignoring data from the past for frame base_link at time 1731704082.417899 according to authority Authority undetectable
+Possible reasons are listed at http://wiki.ros.org/tf/Errors%20explained
+         at line 294 in ./src/buffer_core.cpp
+Warning: TF_OLD_DATA ignoring data from the past for frame base_link at time 1731704082.451424 according to authority Authority undetectable
+Possible reasons are listed at http://wiki.ros.org/tf/Errors%20explained
+         at line 294 in ./src/buffer_core.cpp
+Warning: TF_OLD_DATA ignoring data from the past for frame base_link at time 1731704082.484756 according to authority Authority undetectable
+Possible reasons are listed at http://wiki.ros.org/tf/Errors%20explained
+         at line 294 in ./src/buffer_core.cpp
+Warning: TF_OLD_DATA ignoring data from the past for frame base_link at time 1731704082.518061 according to authority Authority undetectable
+Possible reasons are listed at http://wiki.ros.org/tf/Errors%20explained
+         at line 294 in ./src/buffer_core.cpp
+Warning: TF_OLD_DATA ignoring data from the past for frame base_link at time 1731704082.551394 according to authority Authority undetectable
+Possible reasons are listed at http://wiki.ros.org/tf/Errors%20explained
+         at line 294 in ./src/buffer_core.cpp
+Warning: TF_OLD_DATA ignoring data from the past for frame base_link at time 1731704082.584664 according to authority Authority undetectable
+Possible reasons are listed at http://wiki.ros.org/tf/Errors%20explained
+         at line 294 in ./src/buffer_core.cpp

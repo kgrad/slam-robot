@@ -1,0 +1,116 @@
+rasp@rasp-desktop:~/robot_ws$ ros2 launch robot_slam launch_robot.launch.py 
+[INFO] [launch]: All log files can be found below /home/rasp/.ros/log/2024-11-15-21-52-26-445654-rasp-desktop-13810
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [robot_state_publisher-1]: process started with pid [13813]
+[INFO] [ros2_control_node-2]: process started with pid [13815]
+[INFO] [spawner-3]: process started with pid [13817]
+[INFO] [spawner-4]: process started with pid [13819]
+[INFO] [twist_mux-5]: process started with pid [13821]
+[ros2_control_node-2] [WARN] [1731703948.109245650] [controller_manager]: [Deprecated] Passing the robot description parameter directly to the control_manager node is deprecated. Use '~/robot_description' topic from 'robot_state_publisher' instead.
+[ros2_control_node-2] [INFO] [1731703948.115473221] [resource_manager]: Loading hardware 'RealRobot' 
+[ros2_control_node-2] [INFO] [1731703948.118497432] [resource_manager]: Initialize hardware 'RealRobot' 
+[ros2_control_node-2] [INFO] [1731703948.119409020] [DiffDriveArduinoHardware]: PID values not supplied, using defaults.
+[ros2_control_node-2] [INFO] [1731703948.119558689] [resource_manager]: Successful initialization of hardware 'RealRobot'
+[ros2_control_node-2] [INFO] [1731703948.120012881] [resource_manager]: 'configure' hardware 'RealRobot' 
+[ros2_control_node-2] [INFO] [1731703948.120093964] [DiffDriveArduinoHardware]: Configuring ...please wait...
+[ros2_control_node-2] [INFO] [1731703948.139285622] [DiffDriveArduinoHardware]: Successfully configured!
+[ros2_control_node-2] [INFO] [1731703948.139429311] [resource_manager]: Successful 'configure' of hardware 'RealRobot'
+[ros2_control_node-2] [INFO] [1731703948.139474843] [resource_manager]: 'activate' hardware 'RealRobot' 
+[ros2_control_node-2] [INFO] [1731703948.139504025] [DiffDriveArduinoHardware]: Activating ...please wait...
+[ros2_control_node-2] [INFO] [1731703948.139528707] [DiffDriveArduinoHardware]: Successfully activated!
+[ros2_control_node-2] [INFO] [1731703948.139558556] [resource_manager]: Successful 'activate' of hardware 'RealRobot'
+[twist_mux-5] [INFO] [1731703948.182120774] [twist_mux]: Topic handler 'topics.navigation' subscribed to topic 'cmd_vel': timeout = 0.500000s , priority = 10.
+[ros2_control_node-2] [INFO] [1731703948.206482302] [controller_manager]: update rate is 30 Hz
+[ros2_control_node-2] [WARN] [1731703948.212543002] [controller_manager]: No real-time kernel detected on this system. See [https://control.ros.org/master/doc/ros2_control/controller_manager/doc/userdoc.html] for details on how to enable realtime scheduling.
+[robot_state_publisher-1] [INFO] [1731703948.235069690] [robot_state_publisher]: got segment base_footprint
+[robot_state_publisher-1] [INFO] [1731703948.235583061] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-1] [INFO] [1731703948.235682254] [robot_state_publisher]: got segment container
+[robot_state_publisher-1] [INFO] [1731703948.235720398] [robot_state_publisher]: got segment laser
+[robot_state_publisher-1] [INFO] [1731703948.235750784] [robot_state_publisher]: got segment left_wheel
+[robot_state_publisher-1] [INFO] [1731703948.235777781] [robot_state_publisher]: got segment right_wheel
+[robot_state_publisher-1] [INFO] [1731703948.235803574] [robot_state_publisher]: got segment support_wheels
+[robot_state_publisher-1] [INFO] [1731703948.235830219] [robot_state_publisher]: got segment support_wheels_back
+[ros2_control_node-2] The ReadByte() call has timed out.
+[spawner-3] [INFO] [1731703949.520483096] [spawner_joint_broad]: waiting for service /controller_manager/list_controllers to become available...
+[ros2_control_node-2] [INFO] [1731703949.528696993] [controller_manager]: Loading controller 'joint_broad'
+[spawner-4] [INFO] [1731703949.578529377] [spawner_diff_cont]: waiting for service /controller_manager/list_controllers to become available...
+[spawner-3] [INFO] [1731703949.623513206] [spawner_joint_broad]: Loaded joint_broad
+[ros2_control_node-2] [INFO] [1731703949.629482474] [controller_manager]: Configuring controller 'joint_broad'
+[ros2_control_node-2] [INFO] [1731703949.629830436] [joint_broad]: 'joints' or 'interfaces' parameter is empty. All available state interfaces will be published
+[spawner-3] [INFO] [1731703949.722477807] [spawner_joint_broad]: Configured and activated joint_broad
+[INFO] [spawner-3]: process has finished cleanly [pid 13817]
+[ros2_control_node-2] [INFO] [1731703951.843010300] [controller_manager]: Loading controller 'diff_cont'
+[spawner-4] [INFO] [1731703951.922801189] [spawner_diff_cont]: Loaded diff_cont
+[ros2_control_node-2] [INFO] [1731703951.928815105] [controller_manager]: Configuring controller 'diff_cont'
+[spawner-4] [INFO] [1731703952.022906444] [spawner_diff_cont]: Configured and activated diff_cont
+[INFO] [spawner-4]: process has finished cleanly [pid 13819]
+[INFO] [ekf_node-6]: process started with pid [13877]
+[INFO] [rplidar_composition-7]: process started with pid [13879]
+[rplidar_composition-7] [INFO] [1731703952.465994487] [rplidar_composition]: RPLIDAR running on ROS 2 package rplidar_ros. SDK Version: '1.12.0'
+[rplidar_composition-7] [INFO] [1731703954.978607720] [rplidar_composition]: RPLIDAR S/N: D984ED93C0EA98C9A5E698F24C5A4669
+[rplidar_composition-7] [INFO] [1731703954.978815013] [rplidar_composition]: Firmware Ver: 1.29
+[rplidar_composition-7] [INFO] [1731703954.978951684] [rplidar_composition]: Hardware Rev: 7
+[rplidar_composition-7] [INFO] [1731703954.980643691] [rplidar_composition]: RPLidar health status : '0'
+[rplidar_composition-7] [INFO] [1731703955.622634291] [rplidar_composition]: current scan mode: Standard, max_distance: 12.0 m, Point number: 2.0K , angle_compensate: 1, flip_x_axis 0
+[ekf_node-6] Failed to meet update rate! Took 0.2095678450000000026seconds. Try decreasing the rate, limiting sensor output frequency, or limiting the number of sensors.
+[ekf_node-6] Failed to meet update rate! Took 0.074769399000000000277seconds. Try decreasing the rate, limiting sensor output frequency, or limiting the number of sensors.
+[ekf_node-6] Failed to meet update rate! Took 0.065671827000000002061seconds. Try decreasing the rate, limiting sensor output frequency, or limiting the number of sensors.
+[ekf_node-6] Failed to meet update rate! Took 0.12076821599999999768seconds. Try decreasing the rate, limiting sensor output frequency, or limiting the number of sensors.
+[ekf_node-6] Failed to meet update rate! Took 0.043634595999999997717seconds. Try decreasing the rate, limiting sensor output frequency, or limiting the number of sensors.
+[ekf_node-6] Failed to meet update rate! Took 0.19743112700000001181seconds. Try decreasing the rate, limiting sensor output frequency, or limiting the number of sensors.
+[ekf_node-6] Failed to meet update rate! Took 0.079534485000000001986seconds. Try decreasing the rate, limiting sensor output frequency, or limiting the number of sensors.
+[ekf_node-6] Failed to meet update rate! Took 0.099603284999999999738seconds. Try decreasing the rate, limiting sensor output frequency, or limiting the number of sensors.
+[ekf_node-6] Failed to meet update rate! Took 0.08903130400000000555seconds. Try decreasing the rate, limiting sensor output frequency, or limiting the number of sensors.
+[ekf_node-6] Failed to meet update rate! Took 0.052832587999999999773seconds. Try decreasing the rate, limiting sensor output frequency, or limiting the number of sensors.
+[ekf_node-6] Failed to meet update rate! Took 0.058671146000000000409seconds. Try decreasing the rate, limiting sensor output frequency, or limiting the number of sensors.
+[ekf_node-6] Failed to meet update rate! Took 0.33431338599999999017seconds. Try decreasing the rate, limiting sensor output frequency, or limiting the number of sensors.
+[ekf_node-6] Failed to meet update rate! Took 1.0078585860000000007seconds. Try decreasing the rate, limiting sensor output frequency, or limiting the number of sensors.
+[ekf_node-6] Failed to meet update rate! Took 2.4030465589999998599seconds. Try decreasing the rate, limiting sensor output frequency, or limiting the number of sensors.
+[ekf_node-6] Failed to meet update rate! Took 0.16450007099999999771seconds. Try decreasing the rate, limiting sensor output frequency, or limiting the number of sensors.
+[ekf_node-6] Failed to meet update rate! Took 0.096879325000000002244seconds. Try decreasing the rate, limiting sensor output frequency, or limiting the number of sensors.
+[ekf_node-6] Failed to meet update rate! Took 0.10912117400000000134seconds. Try decreasing the rate, limiting sensor output frequency, or limiting the number of sensors.
+[ekf_node-6] Failed to meet update rate! Took 0.17929095999999999922seconds. Try decreasing the rate, limiting sensor output frequency, or limiting the number of sensors.
+[ekf_node-6] Failed to meet update rate! Took 0.18256524700000001382seconds. Try decreasing the rate, limiting sensor output frequency, or limiting the number of sensors.
+[ekf_node-6] Failed to meet update rate! Took 0.10488519400000000104seconds. Try decreasing the rate, limiting sensor output frequency, or limiting the number of sensors.
+[ekf_node-6] Failed to meet update rate! Took 1.5592756539999998999seconds. Try decreasing the rate, limiting sensor output frequency, or limiting the number of sensors.
+[ekf_node-6] Failed to meet update rate! Took 1.6192268270000000907seconds. Try decreasing the rate, limiting sensor output frequency, or limiting the number of sensors.
+[ekf_node-6] Failed to meet update rate! Took 0.90742920699999995993seconds. Try decreasing the rate, limiting sensor output frequency, or limiting the number of sensors.
+[ekf_node-6] Failed to meet update rate! Took 0.83823510899999997825seconds. Try decreasing the rate, limiting sensor output frequency, or limiting the number of sensors.
+[ekf_node-6] Failed to meet update rate! Took 0.36153406799999998622seconds. Try decreasing the rate, limiting sensor output frequency, or limiting the number of sensors.
+[ekf_node-6] Failed to meet update rate! Took 0.57789944900000000949seconds. Try decreasing the rate, limiting sensor output frequency, or limiting the number of sensors.
+[ekf_node-6] Failed to meet update rate! Took 0.35538275600000002186seconds. Try decreasing the rate, limiting sensor output frequency, or limiting the number of sensors.
+[ekf_node-6] Failed to meet update rate! Took 0.35361506599999997791seconds. Try decreasing the rate, limiting sensor output frequency, or limiting the number of sensors.
+[ekf_node-6] Failed to meet update rate! Took 0.17109659799999998864seconds. Try decreasing the rate, limiting sensor output frequency, or limiting the number of sensors.
+[ekf_node-6] Failed to meet update rate! Took 0.34245032199999997369seconds. Try decreasing the rate, limiting sensor output frequency, or limiting the number of sensors.
+[ekf_node-6] Failed to meet update rate! Took 0.35503068799999998317seconds. Try decreasing the rate, limiting sensor output frequency, or limiting the number of sensors.
+[ekf_node-6] Failed to meet update rate! Took 0.44339327800000000179seconds. Try decreasing the rate, limiting sensor output frequency, or limiting the number of sensors.
+[ekf_node-6] Failed to meet update rate! Took 0.15173705400000001009seconds. Try decreasing the rate, limiting sensor output frequency, or limiting the number of sensors.
+[ekf_node-6] Failed to meet update rate! Took 0.30085657500000001496seconds. Try decreasing the rate, limiting sensor output frequency, or limiting the number of sensors.
+[ekf_node-6] Failed to meet update rate! Took 0.37934266500000002331seconds. Try decreasing the rate, limiting sensor output frequency, or limiting the number of sensors.
+[ekf_node-6] Failed to meet update rate! Took 3.0046369980000000588seconds. Try decreasing the rate, limiting sensor output frequency, or limiting the number of sensors.
+[ekf_node-6] Failed to meet update rate! Took 0.76295888800000000174seconds. Try decreasing the rate, limiting sensor output frequency, or limiting the number of sensors.
+[ekf_node-6] Failed to meet update rate! Took 0.55159462999999997468seconds. Try decreasing the rate, limiting sensor output frequency, or limiting the number of sensors.
+[ekf_node-6] Failed to meet update rate! Took 0.31896373199999999981seconds. Try decreasing the rate, limiting sensor output frequency, or limiting the number of sensors.
+[ekf_node-6] Failed to meet update rate! Took 1.1769947279999999346seconds. Try decreasing the rate, limiting sensor output frequency, or limiting the number of sensors.
+[ekf_node-6] Failed to meet update rate! Took 0.5675235690000000055seconds. Try decreasing the rate, limiting sensor output frequency, or limiting the number of sensors.
+[ekf_node-6] Failed to meet update rate! Took 1.0621561600000000158seconds. Try decreasing the rate, limiting sensor output frequency, or limiting the number of sensors.
+[ekf_node-6] Failed to meet update rate! Took 0.45995553099999997304seconds. Try decreasing the rate, limiting sensor output frequency, or limiting the number of sensors.
+[ekf_node-6] Failed to meet update rate! Took 0.23044692399999999743seconds. Try decreasing the rate, limiting sensor output frequency, or limiting the number of sensors.
+[ekf_node-6] Failed to meet update rate! Took 0.44045184399999998126seconds. Try decreasing the rate, limiting sensor output frequency, or limiting the number of sensors.
+[ekf_node-6] Failed to meet update rate! Took 0.21503553499999999987seconds. Try decreasing the rate, limiting sensor output frequency, or limiting the number of sensors.
+[ekf_node-6] Failed to meet update rate! Took 0.33424583200000002048seconds. Try decreasing the rate, limiting sensor output frequency, or limiting the number of sensors.
+[ekf_node-6] Failed to meet update rate! Took 0.58480033700000000341seconds. Try decreasing the rate, limiting sensor output frequency, or limiting the number of sensors.
+[ekf_node-6] Failed to meet update rate! Took 2.9573779110000000259seconds. Try decreasing the rate, limiting sensor output frequency, or limiting the number of sensors.
+[ekf_node-6] Failed to meet update rate! Took 0.96647201500000001761seconds. Try decreasing the rate, limiting sensor output frequency, or limiting the number of sensors.
+[ekf_node-6] Failed to meet update rate! Took 1.2547432130000000239seconds. Try decreasing the rate, limiting sensor output frequency, or limiting the number of sensors.
+^C[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[rplidar_composition-7] [INFO] [1731704105.633614280] [rclcpp]: signal_handler(signum=2)
+[twist_mux-5] [INFO] [1731704105.633615150] [rclcpp]: signal_handler(signum=2)
+[ros2_control_node-2] [INFO] [1731704105.634029246] [rclcpp]: signal_handler(signum=2)
+[robot_state_publisher-1] [INFO] [1731704105.634193491] [rclcpp]: signal_handler(signum=2)
+[ekf_node-6] [INFO] [1731704105.634363533] [rclcpp]: signal_handler(signum=2)
+[INFO] [ekf_node-6]: process has finished cleanly [pid 13877]
+[INFO] [robot_state_publisher-1]: process has finished cleanly [pid 13813]
+[INFO] [twist_mux-5]: process has finished cleanly [pid 13821]
+[INFO] [rplidar_composition-7]: process has finished cleanly [pid 13879]
+[INFO] [ros2_control_node-2]: process has finished cleanly [pid 13815]
